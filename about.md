@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Sitexa website is maintained by Oscar Peng. I am a computer engineer.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I am interest in all interest things in the world.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[xnpeng@163.com](mailto:xnpeng@163.com)
