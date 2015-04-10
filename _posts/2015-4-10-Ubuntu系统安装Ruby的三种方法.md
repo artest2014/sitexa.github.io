@@ -40,7 +40,7 @@ RVM是Ruby的版本管理器工具。
 检查当前成功安装的Ruby版本
 
     $ ruby -v
-安装gems
+###安装gems###
 
     $ gem list
     $ gem install [gem-name]
