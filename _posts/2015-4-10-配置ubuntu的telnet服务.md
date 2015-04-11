@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 配置ubuntu的telnet服务
+category: 'other'
 ---
 
 ##1.安装xinetd 以及telnetd
