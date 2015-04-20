@@ -9,7 +9,7 @@ $ curl -sS https://getcomposer.org/installer | php
 $ sudo mv composer.phar /usr/local/bin/composer
 
 ##2, Use Composer
-###(1)pacagist.org
+###(1)packagist.org
 Packagist is the main Composer repository. It aggregates all sorts of PHP packages that are installable with Composer.
 Browse packages or submit your own.
 ###(2)create a project dir
