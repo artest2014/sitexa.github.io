@@ -27,7 +27,6 @@ ALCxxx
 ###(3),IORegistry Explorer (choose one)
 ####[1],IORegistryExplorer_v2.1.zip
 ####[2],IOJones
-
 ###(4),Kext Install utilities
 i.e., Kext Wizard, Kext Utility, DPCIManager, etc.
 
