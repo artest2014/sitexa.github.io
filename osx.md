@@ -5,4 +5,4 @@ category: 'osx'
 permalink: /osx/
 ---
 
-#Mac OS X operating system
+Mac OS X operating system

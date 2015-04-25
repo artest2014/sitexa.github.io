@@ -5,4 +5,4 @@ category: 'laravel'
 permalink: /laravel/
 ---
 
-#Laravel framework.
+Laravel framework.
