@@ -6,3 +6,4 @@ permalink: /laravel/
 ---
 
 Laravel framework.
+
