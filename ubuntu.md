@@ -5,4 +5,4 @@ category: 'ubuntu'
 permalink: /ubuntu/
 ---
 
-#Ubuntu operating system
+Ubuntu operating system
