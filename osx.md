@@ -6,3 +6,4 @@ permalink: /osx/
 ---
 
 Mac OS X operating system
+

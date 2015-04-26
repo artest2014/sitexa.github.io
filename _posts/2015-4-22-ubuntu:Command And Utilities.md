@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ubuntu 14.04 Command And Utilities
-category: 'other'
+category: 'ubuntu'
 ---
 
 ##1,将应用程序锁定到启动栏[Launcher]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ubuntu系统安装Ruby的三种方法
-category: 'people'
+category: 'ubuntu'
 ---
 
 Ruby是一个开源的动态编程语言，它有优美的语法，可用于构建可伸缩的Web应用程序。ruby gems可以很好地增强Ruby开发者的开发效率。

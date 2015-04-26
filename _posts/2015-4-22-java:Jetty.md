@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jetty
-category: 'other'
+category: 'java'
 ---
 
 ##1,下载安装jetty

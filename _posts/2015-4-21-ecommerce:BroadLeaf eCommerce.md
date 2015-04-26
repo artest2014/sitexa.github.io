@@ -1,7 +1,7 @@
 ---
 layout: post
 title: BroadLeaf V4.0.0
-category: 'other'
+category: 'ecommerce'
 ---
 
 ##1,Install BroadLeaf with eclipse

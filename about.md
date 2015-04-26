@@ -15,9 +15,9 @@ Sitexa website is maintained by Oscar Peng. I am a computer engineer.
 
 4,OSX, operating system I'm learning;
 
-5,Product, products or framework I'm interest in, i.e. Laravel, Jekyll, IOT, eCommerce,etc.
+5,Product, products or framework I'm interest in, i.e. Laravel, Jekyll, IOT, eCommerce, etc.
 
-6,Programming language, Java, Android, Swift, Objective-C,PHP, Ruby, Perl,etc.
+6,Programming language, Java, Android, Swift, Objective-C, PHP, Ruby, Perl, etc.
 
 
 ### More Information

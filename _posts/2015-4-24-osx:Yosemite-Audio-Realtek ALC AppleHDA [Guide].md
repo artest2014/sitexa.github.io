@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Audio - Realtek ALC AppleHDA [Guide]
-category: 'other'
+category: 'osx'
 ---
 
 ##1,New User/First Time/OS X Audio

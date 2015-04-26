@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GitHub Repository website and Project blog on github.io
-category: 'other'
+category: 'jekyll'
 ---
 
 使用github托管用户博客(Repository)和项目博客(Project)

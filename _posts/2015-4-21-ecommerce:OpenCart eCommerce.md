@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OpenCart V2.0
-category: 'other'
+category: 'ecommerce'
 ---
 
 ##1,Install OpenCart
