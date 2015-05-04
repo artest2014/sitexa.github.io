@@ -22,7 +22,7 @@ category: 'ecommerce'
     		If 0755 does not work try 0777.
 ###(4) Make sure you have installed a MySQL Database which has a user assigned to it
 DO NOT USE YOUR ROOT USERNAME AND ROOT PASSWORD
-###(5) Visit the store homepage e.g. http://www.example.com or http://www.example.com/store/
+###(5) Visit the store homepage e.g. http://www.example.com or http://www.example.com/opencart/
 ###(6) You should be taken to the installer page. Follow the on screen instructions.
 ###(7) After successful install, delete the /install/ directory from ftp.
 
