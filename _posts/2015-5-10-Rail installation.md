@@ -678,6 +678,449 @@ result:
     Done installing documentation for mysql2 after 0 seconds
     1 gem installed
 
+安装 rspec-support：
+
+    Fetching: rspec-support-3.1.2.gem (100%)
+    Successfully installed rspec-support-3.1.2
+    Parsing documentation for rspec-support-3.1.2
+    Installing ri documentation for rspec-support-3.1.2
+    Done installing documentation for rspec-support after 0 seconds
+    1 gem installed
+
+运行 bundle install:
+
+    Fetching gem metadata from http://rubygems.org/.............
+    Fetching version metadata from http://rubygems.org/...
+    Fetching dependency metadata from http://rubygems.org/..
+    Using rake 10.4.2
+    Using Ascii85 1.0.2
+    Using CFPropertyList 2.2.8
+    Using RedCloth 4.2.9
+    Using aasm 4.0.3
+    Using i18n 0.7.0
+    Using json 1.8.2
+    Using minitest 5.6.0
+    Using thread_safe 0.3.5
+    Using tzinfo 1.2.2
+    Using activesupport 4.2.0.rc3
+    Using builder 3.2.2
+    Using erubis 2.7.0
+    Using mini_portile 0.6.2
+    Using nokogiri 1.6.6.2
+    Using rails-deprecated_sanitizer 1.0.3
+    Using rails-dom-testing 1.0.5
+    Using loofah 2.0.1
+    Using rails-html-sanitizer 1.0.1
+    Using actionview 4.2.0.rc3
+    Using rack 1.6.0.beta2
+    Using rack-test 0.6.2
+    Using actionpack 4.2.0.rc3
+    Using globalid 0.3.0
+    Using activejob 4.2.0.rc3
+    Using mime-types 2.4.3
+    Using mail 2.6.3
+    Using actionmailer 4.2.0.rc3
+    Using actionpack-page_caching 1.0.2
+    Using activemerchant 1.48.0
+    Using activemodel 4.2.0.rc3
+    Using arel 6.0.0
+    Using activerecord 4.2.0.rc3
+    Using addressable 2.3.6
+    Using afm 0.2.2
+    Using american_date 1.1.0
+    Using excon 0.41.0
+    Using formatador 0.2.5
+    Using net-ssh 2.9.1
+    Using net-scp 1.2.1
+    Using fog-core 1.25.0
+    Using multi_json 1.10.1
+    Using fog-json 1.0.0
+    Using inflecto 0.0.2
+    Using fog-brightbox 0.7.0
+    Using fog-xml 0.1.1
+    Using fog-profitbricks 0.0.1
+    Using fog-radosgw 0.0.3
+    Using fog-sakuracloud 0.1.1
+    Using fog-softlayer 0.3.24
+    Using fog-terremark 0.0.3
+    Using fission 0.5.0
+    Using fog-vmfusion 0.0.1
+    Using fog-voxel 0.0.1
+    Using ipaddress 0.8.0
+    Using trollop 2.0
+    Using rbvmomi 1.8.2
+    Using opennebula 4.10.1
+    Using fog 1.25.0
+    Using unf_ext 0.0.6
+    Using unf 0.1.4
+    Using asset_sync 1.1.0
+    Using request_store 1.1.0
+    Using ffi 1.9.6
+    Using ffi-compiler 0.1.3
+    Using scrypt 1.2.1
+    Using authlogic 3.4.3 from git://github.com/drhenner/authlogic.git (at rails4.2)
+    Using autotest-rails-pure 4.1.2
+    Using awesome_nested_set 3.0.1
+    Using aws-sdk-v1 1.59.0
+    Using aws-sdk 1.59.0
+    Using coderay 1.1.0
+    Using better_errors 2.0.0
+    Using debug_inspector 0.0.2
+    Using binding_of_caller 0.7.2
+    Using bluecloth 2.2.0
+    Using columnize 0.8.9
+    Using debugger-linecache 1.2.0
+    Using slop 3.6.0
+    Using byebug 3.5.1
+    Using cancan 1.6.10
+    Using xpath 2.0.0
+    Using capybara 2.4.4
+    Using choice 0.1.6
+    Using chronic 0.10.2
+    Using chunky_png 1.3.3
+    Using climate_control 0.0.3
+    Using cocaine 0.5.4
+    Using sass 3.4.9
+    Using compass-core 1.0.1
+    Using compass-import-once 1.0.5
+    Using rb-fsevent 0.9.4
+    Using rb-inotify 0.9.5
+    Using compass 1.0.1
+    Using compass-rails 2.0.1
+    Using database_cleaner 1.3.0
+    Using diff-lcs 1.2.5
+    Using dynamic_form 1.1.4
+    Using launchy 2.4.3
+    Using email_spec 1.6.0
+    Using execjs 2.2.2
+    Using factory_girl 4.5.0
+    Using thor 0.19.1
+    Using railties 4.2.0.rc3
+    Using factory_girl_rails 4.5.0
+    Using faker 1.4.3
+    Using friendly_id 5.1.0.beta.1
+    Using hashery 2.1.1
+    Using hike 1.2.3
+    Using jbuilder 2.2.5
+    Using jquery-rails 4.0.0
+    Using jquery-ui-rails 5.0.2
+    Using metaclass 0.0.4
+    Using mocha 0.13.3
+    Using paperclip 4.2.0
+    Using ruby-rc4 0.1.5
+    Using ttfunk 1.0.3
+    Using pdf-reader 1.3.3
+    Using prawn 0.12.0
+    Using railroady 1.2.0
+    Using bundler 1.9.6
+    Using tilt 1.4.1
+    Using sprockets 2.11.0
+    Using sprockets-rails 2.0.1
+    Using rails 4.2.0.rc3
+    Using ruby-graphviz 1.0.9
+    Using rails-erd 1.1.0
+    Using rails3-generators 1.0.0
+    Using rails_config 0.4.2
+    Installing rmagick 2.13.3
+    Using rspec-support 3.1.2
+    Installing rspec-core 3.1.7
+    Installing rspec-expectations 3.1.2
+    Installing rspec-mocks 3.1.3
+    Installing rspec-rails 3.1.0
+    Installing rspec-rails-mocha 0.3.2
+    Installing sass-rails 4.0.1
+    Using sqlite3 1.3.10
+    Installing uglifier 2.5.3
+    Installing will_paginate 3.0.7
+    Installing yard 0.8.7.6
+    Installing zurb-foundation 4.3.2
+    Bundle complete! 53 Gemfile dependencies, 142 gems now installed.
+    Gems in the group production were not installed.
+    Use `bundle show [gemname]` to see where a bundled gem is installed.
+    Post-install message from rmagick:
+    Please report any bugs. See https://github.com/gemhome/rmagick/compare/RMagick_2-13-2...master and https://github.com/rmagick/rmagick/issues/18
 
 
+重新运行命令安装gems构建app:
+
+    sudo gem install bundler
+
+result:
+
+    Fetching: bundler-1.9.7.gem (100%)
+    Successfully installed bundler-1.9.7
+    Parsing documentation for bundler-1.9.7
+    Installing ri documentation for bundler-1.9.7
+    Done installing documentation for bundler after 4 seconds
+    1 gem installed
+
+运行bundle install:
+
+    bundle install
+
+result:
+
+    Using rake 10.4.2
+    Using Ascii85 1.0.2
+    Using CFPropertyList 2.2.8
+    Using RedCloth 4.2.9
+    Using aasm 4.0.3
+    Using i18n 0.7.0
+    Using json 1.8.2
+    Using minitest 5.6.0
+    Using thread_safe 0.3.5
+    Using tzinfo 1.2.2
+    Using activesupport 4.2.0.rc3
+    Using builder 3.2.2
+    Using erubis 2.7.0
+    Using mini_portile 0.6.2
+    Using nokogiri 1.6.6.2
+    Using rails-deprecated_sanitizer 1.0.3
+    Using rails-dom-testing 1.0.5
+    Using loofah 2.0.1
+    Using rails-html-sanitizer 1.0.1
+    Using actionview 4.2.0.rc3
+    Using rack 1.6.0.beta2
+    Using rack-test 0.6.2
+    Using actionpack 4.2.0.rc3
+    Using globalid 0.3.0
+    Using activejob 4.2.0.rc3
+    Using mime-types 2.4.3
+    Using mail 2.6.3
+    Using actionmailer 4.2.0.rc3
+    Using actionpack-page_caching 1.0.2
+    Using activemerchant 1.48.0
+    Using activemodel 4.2.0.rc3
+    Using arel 6.0.0
+    Using activerecord 4.2.0.rc3
+    Using addressable 2.3.6
+    Using afm 0.2.2
+    Using american_date 1.1.0
+    Using excon 0.41.0
+    Using formatador 0.2.5
+    Using net-ssh 2.9.1
+    Using net-scp 1.2.1
+    Using fog-core 1.25.0
+    Using multi_json 1.10.1
+    Using fog-json 1.0.0
+    Using inflecto 0.0.2
+    Using fog-brightbox 0.7.0
+    Using fog-xml 0.1.1
+    Using fog-profitbricks 0.0.1
+    Using fog-radosgw 0.0.3
+    Using fog-sakuracloud 0.1.1
+    Using fog-softlayer 0.3.24
+    Using fog-terremark 0.0.3
+    Using fission 0.5.0
+    Using fog-vmfusion 0.0.1
+    Using fog-voxel 0.0.1
+    Using ipaddress 0.8.0
+    Using trollop 2.0
+    Using rbvmomi 1.8.2
+    Using opennebula 4.10.1
+    Using fog 1.25.0
+    Using unf_ext 0.0.6
+    Using unf 0.1.4
+    Using asset_sync 1.1.0
+    Using request_store 1.1.0
+    Using ffi 1.9.6
+    Using ffi-compiler 0.1.3
+    Using scrypt 1.2.1
+    Using authlogic 3.4.3 from git://github.com/drhenner/authlogic.git (at rails4.2)
+    Using autotest-rails-pure 4.1.2
+    Using awesome_nested_set 3.0.1
+    Using aws-sdk-v1 1.59.0
+    Using aws-sdk 1.59.0
+    Using coderay 1.1.0
+    Using better_errors 2.0.0
+    Using debug_inspector 0.0.2
+    Using binding_of_caller 0.7.2
+    Using bluecloth 2.2.0
+    Using columnize 0.8.9
+    Using debugger-linecache 1.2.0
+    Using slop 3.6.0
+    Using byebug 3.5.1
+    Using cancan 1.6.10
+    Using xpath 2.0.0
+    Using capybara 2.4.4
+    Using choice 0.1.6
+    Using chronic 0.10.2
+    Using chunky_png 1.3.3
+    Using climate_control 0.0.3
+    Using cocaine 0.5.4
+    Using sass 3.4.9
+    Using compass-core 1.0.1
+    Using compass-import-once 1.0.5
+    Using rb-fsevent 0.9.4
+    Using rb-inotify 0.9.5
+    Using compass 1.0.1
+    Using compass-rails 2.0.1
+    Using database_cleaner 1.3.0
+    Using diff-lcs 1.2.5
+    Using dynamic_form 1.1.4
+    Using launchy 2.4.3
+    Using email_spec 1.6.0
+    Using execjs 2.2.2
+    Using factory_girl 4.5.0
+    Using thor 0.19.1
+    Using railties 4.2.0.rc3
+    Using factory_girl_rails 4.5.0
+    Using faker 1.4.3
+    Using friendly_id 5.1.0.beta.1
+    Using hashery 2.1.1
+    Using hike 1.2.3
+    Using jbuilder 2.2.5
+    Using jquery-rails 4.0.0
+    Using jquery-ui-rails 5.0.2
+    Using metaclass 0.0.4
+    Using mocha 0.13.3
+    Using paperclip 4.2.0
+    Using ruby-rc4 0.1.5
+    Using ttfunk 1.0.3
+    Using pdf-reader 1.3.3
+    Using prawn 0.12.0
+    Using railroady 1.2.0
+    Using bundler 1.9.7
+    Using tilt 1.4.1
+    Using sprockets 2.11.0
+    Using sprockets-rails 2.0.1
+    Using rails 4.2.0.rc3
+    Using ruby-graphviz 1.0.9
+    Using rails-erd 1.1.0
+    Using rails3-generators 1.0.0
+    Using rails_config 0.4.2
+    Using rmagick 2.13.3
+    Using rspec-support 3.1.2
+    Using rspec-core 3.1.7
+    Using rspec-expectations 3.1.2
+    Using rspec-mocks 3.1.3
+    Using rspec-rails 3.1.0
+    Using rspec-rails-mocha 0.3.2
+    Using sass-rails 4.0.1
+    Using sqlite3 1.3.10
+    Using uglifier 2.5.3
+    Using will_paginate 3.0.7
+    Using yard 0.8.7.6
+    Using zurb-foundation 4.3.2
+    Bundle complete! 53 Gemfile dependencies, 142 gems now installed.
+    Gems in the group production were not installed.
+    Use `bundle show [gemname]` to see where a bundled gem is installed.
+
+运行命令：rake db:create:all
+
+    rake db:create:all
+
+resu:
+
+    /var/lib/gems/2.2.0/gems/fog-core-1.25.0/lib/fog/core/collection.rb:144: warning: circular argument reference - filters
+    /var/lib/gems/2.2.0/gems/compass-core-1.0.1/lib/compass/core/caniuse.rb:72: warning: circular argument reference - browsers
+
+运行rake db:migrate db:seed
+
+    rake db:migrate db:seed
+
+result:
+
+    ......
+    == 20100814070158 CreateVariantSuppliers: migrating ===========================
+    -- create_table(:variant_suppliers)
+       -> 0.0044s
+    -- add_index(:variant_suppliers, :variant_id)
+       -> 0.0017s
+    -- add_index(:variant_suppliers, :supplier_id)
+       -> 0.0034s
+    == 20100814070158 CreateVariantSuppliers: migrated (0.0099s) ==================
+
+    == 20100814070240 CreateBrands: migrating =====================================
+    -- create_table(:brands)
+       -> 0.0018s
+    == 20100814070240 CreateBrands: migrated (0.0020s) ============================
+    ......
+    == 20130719071644 RemoveBirthDateFromUsers: migrating =========================
+    -- remove_column(:users, :birth_date)
+       -> 0.0597s
+    == 20130719071644 RemoveBirthDateFromUsers: migrated (0.0599s) ================
+
+    == 20131123212228 MoveBrandToProducts: migrating ==============================
+    -- remove_column(:variants, :brand_id)
+       -> 0.0401s
+    == 20131123212228 MoveBrandToProducts: migrated (0.0403s) =====================
+
+    START SEEDING
+    COUNTRIES
+    States
+    ROLES
+    Address Types
+    PHONE TYPES
+    Item Types
+    DEAL TYPES
+    Accounts
+    SHIPPING RATE TYPES
+    Shipping Zones
+    ACCOUNT TYPES
+    Return Reasons
+    Return CONDITIONS
+    Newsletters
+    Referral Bonuses
+    Referral PROGRAMS
+
+运行 rake db:test:prepare:
+
+    /var/lib/gems/2.2.0/gems/fog-core-1.25.0/lib/fog/core/collection.rb:144: warning: circular argument reference - filters
+    /var/lib/gems/2.2.0/gems/compass-core-1.0.1/lib/compass/core/caniuse.rb:72: warning: circular argument reference - browsers
+
+    ************************************************
+         It is Recommended to use dalli_store.  go to config/initializers/session_store.rb for details
+    ************************************************
+
+          ############################################################################################
+          ############################################################################################
+          !  You need to setup the settings.yml
+          !  copy settings.yml.example to settings.yml
+          !
+          !  YOUR ENV variables are not ready for checkout!
+          !  please adjust ENV['AUTHNET_LOGIN'] && ENV['AUTHNET_PASSWORD']
+          !  if you are not using authorize.net go to each file in /config/environments/*.rb and
+          !  adjust the following code accordingly...
+
+          ::GATEWAY = ActiveMerchant::Billing::AuthorizeNetGateway.new(
+            :login    => Settings.authnet.login,
+            :password => Settings.authnet.password
+          )
+
+          !  This is required for the checkout process to work.
+          !
+          !  Remove or Adjust this warning in /config/environment.rb for developers on your team
+          !  once you everything working with your specific Gateway.
+          ############################################################################################
+
+    START SEEDING
+    COUNTRIES
+    States
+    ROLES
+    Address Types
+    PHONE TYPES
+    Item Types
+    DEAL TYPES
+    Accounts
+    SHIPPING RATE TYPES
+    Shipping Zones
+    ACCOUNT TYPES
+    Return Reasons
+    Return CONDITIONS
+    Newsletters
+    Referral Bonuses
+    Referral PROGRAMS
+
+运行rails server:
+
+    rails server
+
+打开浏览器：http://localhost:3000
+
+<img src='/images/rails_localhost.png' />
+
+出现一大堆错误。上网寻找解决方案，安装缺失的组件，重新安装并构建，运行
+
+<img src='/images/ruby_on_rails.png' />
 
