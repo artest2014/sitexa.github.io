@@ -171,7 +171,7 @@ RxAndroid是RxJava的一个针对Android平台的扩展。它包含了一些能�
 
 ###Retrofit
     
-  @GET("/user/{id}/photo")
+    @GET("/user/{id}/photo")
     void getUserPhoto(@Path("id") int id, Callback<Photo> cb);
   
     @GET("/user/{id}/photo")
