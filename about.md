@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Sitexa website is maintained by Oscar Peng. I am a computer engineer.
+Sitexa website is maintained by Oscar Peng. I am a software engineer.
 
 ### Site map
 1,Place, interest places ever been;
