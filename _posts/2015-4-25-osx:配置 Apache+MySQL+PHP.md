@@ -37,3 +37,17 @@ category: 'osx'
 (3),phpize在两个位置的版本不同:/usr/local/bin/phpize, /usr/bin/phpize, 使用的时候注意保持一致.
 
 
+###5，autoconf
+###6，automake
+###7，Xcode command line
+
+###8,忘了MySQL是如何安装的.启动方法如下:
+(1)
+You can then start the MySQL server from the System Preferences or via the command line or if restarted it has to be command line
+(2)
+Command line start MySQL: sudo /usr/local/mysql/support-files/mysql.server start
+
+refs:
+<a href="http://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/">http://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite</a>
+
+
