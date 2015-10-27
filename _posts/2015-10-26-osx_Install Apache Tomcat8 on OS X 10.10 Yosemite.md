@@ -24,3 +24,10 @@ sudo chown -R <your_username> /Library/Tomcat
 sudo chmod +x /Library/Tomcat/bin/*.sh
 
 <img src="/images/tomcat8.png">
+
+###7,Deploy webapp on tomcat8
+
+####(1) ln -s /Users/[myname]/IdeaProjects/sitexa-openapi/target/sitexa-openapi /Library/Tomcat/webapps/sitexa-api
+####(2) /Library/Tomcat/bin/startup.sh
+
+<img src="/images/sitexa-api.png">
