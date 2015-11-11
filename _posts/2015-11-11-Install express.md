@@ -1,6 +1,6 @@
 ---
 layout: post
-title: npm & nodejs & brew and install nodejs module express
+title: Install express
 category: 'nodejs'
 ---
 
