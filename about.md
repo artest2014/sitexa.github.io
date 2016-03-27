@@ -135,6 +135,10 @@ SwiftWeather is an iOS weather app developed in Swift 2. The app has been active
 ###（16）Kotlin
 Statically typed programming language for the JVM, Android and the browser.
 
+##4,About me
+
+![image](/images/oscar.png)
+
 ## More Information
 
 I am interest in all interest things in the world.
