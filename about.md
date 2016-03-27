@@ -85,56 +85,55 @@ OS X is the second most widely used desktop OS after Windows.
 -   Swift
 -   iOS development
 
-##3,Products and frameworks
-###1,Laravel
+##3, Frameworks and components
+###（1）Laravel
 A PHP Framework For Web Artisans.
 
-###2,CodeIgniter
+###（2）CodeIgniter
 An Application Development Framework - a toolkit - for people who build web sites using PHP. Its goal is to enable you to develop projects much faster than you could if you were writing code from scratch, by providing a rich set of libraries for commonly needed tasks, as well as a simple interface and logical structure to access these libraries. CodeIgniter lets you creatively focus on your project by minimizing the amount of code needed for a given task.
 
-###3,Yii 
+###（3）Yii 
 A high-performance component-based PHP framework.
 
-###4,web2py
+###（4）web2py
 Free and open source full-stack enterprise framework for agile development of secure database-driven web-based applications, 
 written and programmable in Python.
 
-###5,django-rest-framework
+###（5）django-rest-framework
 Web APIs for Django.
 
-###6,Spark
+###（6）Spark
 A micro framework for creating web applications in Java 8 with minimal effort.
 
-###7,kotgo
+###（7）kotgo
 An android development framwork on kotlin using MVP architecture.
 
-###8,NodeBB
+###（8）NodeBB
 Node.js based forum software built for the modern web.
 
-###9,spark-pac4j
+###（9）spark-pac4j
 Security library for Sparkjava
 
-###10,django
+###（10）django
 The Web framework for perfectionists with deadlines.
 
-###11,mongoose
+###（11）mongoose
 MongoDB object modeling designed to work in an asynchronous environment.
 
-###12,WebCollector
+###（12）WebCollector
 WebCollector is an open source web crawler framework based on Java.It provides some simple interfaces for crawling the Web,you can setup a multi-threaded web crawler in less than 5 minutes.
 
-###13,Swift-Radio-Pro
+###（13）Swift-Radio-Pro
 Professional Radio Station App, created w/ Swift 2.0.
 
-###14,iosched
+###（14）iosched
 The Google I/O 2015 Android App.
 
-###15,SwiftWeather
+###（15）SwiftWeather
 SwiftWeather is an iOS weather app developed in Swift 2. The app has been actively upgrading to adopt the latest features of iOS and Swift language.
 
-###16,Kotlin
+###（16）Kotlin
 Statically typed programming language for the JVM, Android and the browser.
-
 
 ## More Information
 
@@ -142,6 +141,6 @@ I am interest in all interest things in the world.
 
 ### Contact me
 
--   [sitexa@gmail.com](mailto:sitexa@gmail.com)
+-   sitexa@gmail.com
 -   Twitter: xnpeng
 -   WeChat: xnpeng
