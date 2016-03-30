@@ -4,7 +4,9 @@ title: Spark micro-framework
 category: 'technology'
 ---
 
-##一，start
+Spark - A micro framework for creating web applications in Java 8 with minimal effort
+
+##start
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-core</artifactId>
@@ -13,17 +15,17 @@ category: 'technology'
     
     get("/hello",(req,res)->{"Hello,world"});
 
-##二，stop server: 
+##stop server: 
     
     stop();
 
-##三，Routes
+##Routes
 -   1,verb(get,post,put,delete,head,trace,connect,options);
    parameters, splat parameters
 -   2, path (/hello,/users/:name);
 -   3, callback (request,response->{}
 
-##四, Request
+##Request
     request.attributes();             // the attributes list
     request.attribute("foo");         // value of foo attribute
     request.attribute("A", "V");      // sets value of attribute A to V
@@ -57,7 +59,7 @@ category: 'technology'
     request.url();                    // the url. e.g. "http://example.com/foo"
     request.userAgent();              // user agent
 
-##五，Response
+##Response
     response.body("hello");
     response.header("foo","bar");
     response.raw();
@@ -65,13 +67,13 @@ category: 'technology'
     response.status(401);
     response.type("text/xml");
 
-##六，QueryMaps;
+##QueryMaps;
     request.queryMap().get("user", "name").value();
     request.queryMap().get("user").get("name").value();
     request.queryMap("user").get("age").integerValue();
     request.queryMap("user").toMap();
 
-##七，Cookie
+##Cookie
     request.cookies();                              // get map of all request cookies
     request.cookie("foo");                          // access request cookie by name
     response.cookie("foo", "bar");                  // set cookie with a value
@@ -79,7 +81,7 @@ category: 'technology'
     response.cookie("foo", "bar", 3600, true);      // secure cookie
     response.removeCookie("foo");                   // remove cookie
 
-##八，Session
+##Session
     request.session(true)                            // create and return session
     request.session().attribute("user")              // Get session attribute 'user'
     request.session().attribute("user", "foo")       // Set session attribute 'user'
@@ -89,7 +91,7 @@ category: 'technology'
     request.session().isNew()                        // Check if session is new
     request.session().raw()                          // Return servlet object
 
-##九，Filter
+##Filter
     before((request, response) -> {
         boolean authenticated;
         // ... check if authenticated
@@ -101,10 +103,10 @@ category: 'technology'
         response.header("foo","bar");
     });
 
-##十，Redirect
+##Redirect
     response.redirect("/bar",301);
 
-##十一，Exception Mapping
+##Exception Mapping
     get("/throwexception", (request, response) -> {
         throw new NotFoundException();
     });
@@ -114,93 +116,93 @@ category: 'technology'
         response.body("Resource not found");
     });
 
-##十二，Static Files
+##Static Files
     staticFileLocation("/public"); // Static files
     externalStaticFileLocation("/var/www/public"); // Static files
 
-##十三，ResponseTransformer
+##ResponseTransformer
     get("/hello", (request, response) -> new MyMessage("Hello World"), gson::toJson);
 
-##十四，Views and Templates
+##Views and Templates
 
-###1,Velocity
+####Velocity
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-template-velocity</artifactId>
         <version>2.3</version>
     </dependency>
 
-###2,Freemarker
+####Freemarker
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-template-freemarker</artifactId>
         <version>2.3</version>
     </dependency>
 
-###3,Mustache
+####Mustache
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-template-mustache</artifactId>
         <version>2.3</version>
     </dependency>
 
-###4,Handlebars
+####Handlebars
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-template-handlebars</artifactId>
         <version>2.3</version>
     </dependency>
 
-###5,Jade
+####Jade
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-template-jade</artifactId>
         <version>2.3</version>
     </dependency>
 
-###6,Thymeleaf
+###Thymeleaf
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-template-thymeleaf</artifactId>
         <version>2.3</version>
     </dependency>
 
-###7,Jetbrick
+####Jetbrick
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-template-jetbrick</artifactId>
         <version>2.3</version>
     </dependency>
 
-###8,Pebble
+###Pebble
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-template-pebble</artifactId>
         <version>2.3</version>
     </dependency>
 
-###9,Water
+####Water
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-template-water</artifactId>
         <version>2.3</version>
     </dependency>
 
-##十五，Embedded Server
+##Embedded Server
 
-###1,port
+####port
 
     port(9090)
 
-###2,secure 
+####secure 
 
     secure(keystoreFile, keystorePassword, truststoreFile, truststorePassword);
 
-###3,threadpool
+####threadpool
 
     threadPool(maxThreads, minThreads, timeOutMillis);
 
-##十六，WebSocket
+##WebSocket
     
     webSocket("/echo", EchoWebSocket.class);
     init(); // Needed if you don't define any HTTP routes after your WebSocket routes
@@ -228,7 +230,7 @@ category: 'technology'
         }
     }
 
-##十七，Other Web Server
+##Other Web Server
     
     <filter>
         <filter-name>SparkFilter</filter-name>
@@ -244,7 +246,7 @@ category: 'technology'
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-##十八，GZIP
+##GZIP
 
     get("/some-path", (request, response) -> {
         // code for your get

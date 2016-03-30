@@ -4,8 +4,6 @@ title: Design patterns implemented in Java
 category: 'technology'
 ---
 
-##Introduction
-
 Design patterns are formalized best practices that the programmer can use to solve common problems when designing an application or system.
 
 Design patterns can speed up the development process by providing tested, proven development paradigms.
