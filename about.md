@@ -7,8 +7,8 @@ permalink: /about/
 This website is maintained by Oscar Peng, a software engineer, interesting in interest technologies in software industry.
 
 ## Site map
-
-##1,Ubuntu, the most interest linux os for software development.
+---------------------------------------------------------------
+##Ubuntu, the most interest linux os for software development.
 ![image](/images/linux-0.png)
 ###Programming on Linux
 -   Ada, C, C++, Go and Fortran. 
@@ -73,7 +73,8 @@ controlled by three voting computers, with two physical processors per computer 
 -   the Debian derivative Skolelinux, provide education-oriented software packages. 
 -   the Linux Terminal Server Project (LTSP).
 
-##2,OSX, the most elegant os by Apple;
+---------------------------------------------------------------
+##OSX, the most elegant os by Apple;
 ![image](/images/Osxboxes.png)
 
 OS X is the fourth most popular general purpose OS; within the market of desktop, laptop and home computers, and by web usage, 
@@ -85,65 +86,73 @@ OS X is the second most widely used desktop OS after Windows.
 -   Swift
 -   iOS development
 
-##3, Frameworks and components
-###（1）Laravel
+---------------------------------------------------------------
+
+##Frameworks and components
+###Laravel
 A PHP Framework For Web Artisans.
 
-###（2）CodeIgniter
+###CodeIgniter
 An Application Development Framework - a toolkit - for people who build web sites using PHP. Its goal is to enable you to develop projects much faster than you could if you were writing code from scratch, by providing a rich set of libraries for commonly needed tasks, as well as a simple interface and logical structure to access these libraries. CodeIgniter lets you creatively focus on your project by minimizing the amount of code needed for a given task.
 
-###（3）Yii 
+###Yii 
 A high-performance component-based PHP framework.
 
-###（4）web2py
+###web2py
 Free and open source full-stack enterprise framework for agile development of secure database-driven web-based applications, 
 written and programmable in Python.
 
-###（5）django-rest-framework
+###django-rest-framework
 Web APIs for Django.
 
-###（6）Spark
+###Spark
 A micro framework for creating web applications in Java 8 with minimal effort.
 
-###（7）kotgo
+###kotgo
 An android development framwork on kotlin using MVP architecture.
 
-###（8）NodeBB
+###NodeBB
 Node.js based forum software built for the modern web.
 
-###（9）spark-pac4j
+###spark-pac4j
 Security library for Sparkjava
 
-###（10）django
+###django
 The Web framework for perfectionists with deadlines.
 
-###（11）mongoose
+###mongoose
 MongoDB object modeling designed to work in an asynchronous environment.
 
-###（12）WebCollector
+###WebCollector
 WebCollector is an open source web crawler framework based on Java.It provides some simple interfaces for crawling the Web,you can setup a multi-threaded web crawler in less than 5 minutes.
 
-###（13）Swift-Radio-Pro
+###Swift-Radio-Pro
 Professional Radio Station App, created w/ Swift 2.0.
 
-###（14）iosched
+###iosched
 The Google I/O 2015 Android App.
 
-###（15）SwiftWeather
+###SwiftWeather
 SwiftWeather is an iOS weather app developed in Swift 2. The app has been actively upgrading to adopt the latest features of iOS and Swift language.
 
-###（16）Kotlin
+###Kotlin
 Statically typed programming language for the JVM, Android and the browser.
 
-##4,About me
+----------------
+
+##About me
 
 ![image](/images/oscar.png)
+
+-----------------
 
 ## More Information
 
 I am interest in all interest things in the world.
 
-### Contact me
+-------------------
+
+## Contact me
 
 -   sitexa@gmail.com
 -   Twitter: xnpeng
