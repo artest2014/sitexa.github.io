@@ -157,3 +157,34 @@ In response to someone complaining about web.py having "yet another template lan
 
 -   You can disagree that these ways are better and say why. But simply criticizing them for being different is a waste of time. Yes, they are different. That's the whole point.
 
+##WEB2PYTM WEB FRAMEWORK
+
+Free open source full-stack framework for rapid development of fast, scalable, secure and portable database-driven web-based applications. Written and programmable in Python.
+
+-   Created by a community of professionals and University professors in Computer Science and Software Engineering.
+-   Always backward compatible. We have not broken backward compatibility since version 1.0 in 2007, and we pledge not to break it in the future.
+-   Easy to run. It requires no installation and no configuration.
+-   Runs on Windows, Mac, Unix/Linux, Google App Engine, Amazon EC2, and almost any web hosting via Python 2.5/2.6/2.7/pypy, or Java with Jython.
+-   Runs with Apache, Lighttpd, Cherokee and almost any other web server via CGI, FastCGI, WSGI, mod_proxy, and/or mod_python. It can embed third party WSGI apps and middleware.
+-   Talks to SQLite, PostgreSQL, MySQL, MSSQL, FireBird, Oracle, IBM DB2, Informix, Ingres, and Google App Engine.
+-   Secure It prevents the most common types of vulnerabilities including Cross Site Scripting, Injection Flaws, and Malicious File Execution.
+-   Enforces good Software Engineering practices (Model-View-Controller design, Server-side form validation, postbacks) that make the code more readable, scalable, and maintainable.
+-   Speaks multiple protocols HTML/XML, RSS/ATOM, RTF, PDF, JSON, AJAX, XML-RPC, CSV, REST, WIKI, Flash/AMF, and Linked Data (RDF).
+-   Includes an SSL-enabled and streaming-capable web server, a relational database, a web-based integrated development environment and web-based management interface, a Database Abstraction Layer that writes SQL for you in real time, internationalization support, multiple authentication methods, role based access control, an error logging and ticketing system, multiple caching methods for scalability, the jQuery library for AJAX and effects, and a scaffolding application to jumpstart development.
+
+##Stream Framework
+
+Stream Framework is a python library which allows you to build activity streams & newsfeeds using Cassandra and/or Redis. If you're not using python have a look at Stream, which supports Node, Ruby, PHP, Python, Go, Scala, Java and REST.
+
+Examples of what you can build are:
+
+-   Activity streams such as seen on Github
+-   A Twitter style newsfeed
+-   A feed like Instagram/ Pinterest
+-   Facebook style newsfeeds
+-   A notification system
+
+##stream
+
+Stream allows you to build scalable newsfeed and activity streams in hours instead of weeks. The documentation will get you up and running quickly. At the moment we have official clients for Ruby, JS/Node, Python, PHP and Java. There are framework integrations available for Rails, Django, Laravel and NodeJS. These framework integrations hook straight into your ORM which makes integration a breeze.
+
