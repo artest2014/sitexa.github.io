@@ -141,7 +141,7 @@ web.py is a web framework for Python that is as simple as it is powerful. web.py
 
 web.py was originally published while Aaron Swartz worked at reddit.com, where the site used it as it grew to become one of the top 1000 sites according to Alexa and served millions of daily page views. "It's the anti-framework framework. web.py doesn't get in your way," explained founder Steve Huffman.
 
-###The web.py Philosophy
+####The web.py Philosophy
 
 The web.py slogan is: "Think about the ideal way to write a web app. Write the code to make it happen."
 
