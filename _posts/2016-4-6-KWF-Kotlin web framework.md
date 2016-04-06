@@ -4,9 +4,10 @@ title: KWF-Kotlin web framework
 category: 'technology'
 ---
 
-A practise framework, considering several situation and multi-level use cases, use a newly created language kotlin,
-a micro backend http framework wasabi, sql to object converter ObjectMap, json converter tool fastjson, 
-jdbc connection pool HikariCP, template engine Freemarker, Angular2, etc, for purpose of web app or rest api.
+A practise framework, considering different situation and use cases, based on kotlin,
+a micro http framework wasabi, sql to object converter Sql2o, json to object converter ObjectMap, 
+object to json converter tool fastjson, jdbc connection pool HikariCP, template engine Freemarker, Angular2, etc, 
+for purpose of web app or rest api.
 
 ##kotlin
 
@@ -18,7 +19,7 @@ jdbc connection pool HikariCP, template engine Freemarker, Angular2, etc, for pu
 
 ##sql2o
 
-##hikari
+##hikaricp
 
 ##objectmap
 
@@ -34,7 +35,7 @@ jdbc connection pool HikariCP, template engine Freemarker, Angular2, etc, for pu
 
 ##bootstrap/mobile
 
-##picaso
+##picasso
 
 ##okhttp
 

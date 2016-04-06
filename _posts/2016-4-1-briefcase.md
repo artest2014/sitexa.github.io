@@ -108,26 +108,26 @@ Netty is a NIO client server framework which enables quick and easy development 
 
 'Quick and easy' doesn't mean that a resulting application will suffer from a maintainability or a performance issue. Netty has been designed carefully with the experiences earned from the implementation of a lot of protocols such as FTP, SMTP, HTTP, and various binary and text-based legacy protocols. As a result, Netty has succeeded to find a way to achieve ease of development, performance, stability, and flexibility without a compromise.
 
-  discard-client          discard-server
-  echo-client             echo-server
-  factorial-client        factorial-server
-  file-server             http-cors-server
-  http-file-server        http-helloworld-server
-  http-snoop-client       http-snoop-server
-  http-upload-client      http-upload-server
-  websocket-client        websocket-server
-  http2-client            http2-server
-  http2-tiles             http2-multiplex-server
-  spdy-client             spdy-server
-  worldclock-client       worldclock-server
-  objectecho-client       objectecho-server
-  quote-client            quote-server
-  securechat-client       securechat-server
-  telnet-client           telnet-server
-  proxy-server            socksproxy-server
-  memcache-binary-client  stomp-client
-  uptime-client           sctpecho-client
-  sctpecho-server         localecho
+-     discard-client          discard-server
+-     echo-client             echo-server
+-     factorial-client        factorial-server
+-     file-server             http-cors-server
+-     http-file-server        http-helloworld-server
+-     http-snoop-client       http-snoop-server
+-     http-upload-client      http-upload-server
+-     websocket-client        websocket-server
+-     http2-client            http2-server
+-     http2-tiles             http2-multiplex-server
+-     spdy-client             spdy-server
+-     worldclock-client       worldclock-server
+-     objectecho-client       objectecho-server
+-     quote-client            quote-server
+-     securechat-client       securechat-server
+-     telnet-client           telnet-server
+-     proxy-server            socksproxy-server
+-     memcache-binary-client  stomp-client
+-     uptime-client           sctpecho-client
+-     sctpecho-server         localecho
   
 reference
 
