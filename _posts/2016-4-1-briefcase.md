@@ -188,3 +188,48 @@ Examples of what you can build are:
 
 Stream allows you to build scalable newsfeed and activity streams in hours instead of weeks. The documentation will get you up and running quickly. At the moment we have official clients for Ruby, JS/Node, Python, PHP and Java. There are framework integrations available for Rails, Django, Laravel and NodeJS. These framework integrations hook straight into your ORM which makes integration a breeze.
 
+##XMPP & WebRTC
+
+Extensible Messaging and Presence Protocol (XMPP) is an open XML technology for real-time communication, which powers a wide range of applications including instant messaging, presence and collaboration.
+
+Key XMPP technologies:
+
+-   Core — information about the core XMPP technologies for XML streaming
+-   Jingle — SIP-compatible multimedia signalling for _**voice, video, file transfer**_, and other applications
+-   Multi-User Chat — flexible, multi-party communication
+-   PubSub — alerts and notifications for data syndication, rich presence, and more
+-   BOSH — an HTTP binding for XMPP (and other) traffic
+
+##MongooseIM
+
+MongooseIM is Erlang Solutions' robust and efficient XMPP server aimed at large installations. Specifically designed for enterprise purposes, it is fault-tolerant, can utilize resources of multiple clustered machines and easily scale in need of more capacity (by just adding a box/VM).
+
+MongooseIM can accept client sessions over vanilla XMPP, Websockets, and HTTP long-polling (a.k.a. BOSH).
+
+##Satellizer
+
+Satellizer is a simple to use, end-to-end, token-based authentication module for AngularJS with built-in support for Google, Facebook, LinkedIn, Twitter, Instagram, GitHub, Bitbucket, Yahoo, Twitch, Microsoft (Windows Live) OAuth providers, as well as Email and Password sign-in. However, you are not limited to the sign-in options above, in fact you can add any OAuth 1.0 or OAuth 2.0 provider by passing provider-specific information in the app config block.
+
+
+##Devise 
+
+Devise is a flexible authentication solution for Rails based on Warden. It:
+
+-   Is Rack based;
+-   Is a complete MVC solution based on Rails engines;
+-   Allows you to have multiple models signed in at the same time;
+-   Is based on a modularity concept: use only what you really need.
+
+It's composed of 10 modules:
+
+-   Database Authenticatable: hashes and stores a password in the database to validate the authenticity of a user while signing in. The authentication can be done both through POST requests or HTTP Basic Authentication.
+-   Omniauthable: adds OmniAuth (https://github.com/intridea/omniauth) support.
+-   Confirmable: sends emails with confirmation instructions and verifies whether an account is already confirmed during sign in.
+-   Recoverable: resets the user password and sends reset instructions.
+-   Registerable: handles signing up users through a registration process, also allowing them to edit and destroy their account.
+-   Rememberable: manages generating and clearing a token for remembering the user from a saved cookie.
+-   Trackable: tracks sign in count, timestamps and IP address.
+-   Timeoutable: expires sessions that have not been active in a specified period of time.
+-   Validatable: provides validations of email and password. It's optional and can be customized, so you're able to define your own validations.
+-   Lockable: locks an account after a specified number of failed sign-in attempts. Can unlock via email or after a specified time period.
+
