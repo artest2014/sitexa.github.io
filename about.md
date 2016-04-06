@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This website is maintained by Oscar Peng. I am a software engineer, interesting in interest technologies in software industry.
+This website is maintained by Oscar Peng. I am a software engineer.
 
 ## Site map
 ---------------------------------------------------------------
@@ -104,6 +104,11 @@ written and programmable in Python.
 
 ###django-rest-framework
 Web APIs for Django.
+
+[http://www.django-rest-framework.org/](http://www.django-rest-framework.org/)
+
+[https://github.com/tomchristie/django-rest-framework](https://github.com/tomchristie/django-rest-framework)
+
 
 ###Spark
 A micro framework for creating web applications in Java 8 with minimal effort.

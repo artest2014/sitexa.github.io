@@ -157,7 +157,7 @@ In response to someone complaining about web.py having "yet another template lan
 
 -   You can disagree that these ways are better and say why. But simply criticizing them for being different is a waste of time. Yes, they are different. That's the whole point.
 
-##WEB2PYTM WEB FRAMEWORK
+##Web2py web framework
 
 Free open source full-stack framework for rapid development of fast, scalable, secure and portable database-driven web-based applications. Written and programmable in Python.
 
@@ -233,3 +233,32 @@ It's composed of 10 modules:
 -   Validatable: provides validations of email and password. It's optional and can be customized, so you're able to define your own validations.
 -   Lockable: locks an account after a specified number of failed sign-in attempts. Can unlock via email or after a specified time period.
 
+##RetroAuth
+
+Android library build on top of retrofit, for simple handling of authenticated requests.
+
+[https://github.com/andretietz/retroauth](https://github.com/andretietz/retroauth)
+
+### Sequence Diagrams
+
+1.When you execute your first authenticated request on a device, this is going to happen inside of retroauth:
+![image](/images/retroauth1.png)
+
+2.After you have an account and a valid token:
+![image](/images/retroauth2.png)
+
+3.When there's no current active account but several accounts exist on the device:
+![image](/images/retroauth3.png)
+
+4.When you have at least on account, an active one is set but your token is not vaild (anymore)
+![image](/images/retroauth4.png)
+
+##Passport
+
+Passport is Express-compatible authentication middleware for Node.js.
+
+Passport's sole purpose is to authenticate requests, which it does through an extensible set of plugins known as strategies. Passport does not mount routes or assume any particular database schema, which maximizes flexibility and allows application-level decisions to be made by the developer. The API is simple: you provide Passport a request to authenticate, and Passport provides hooks for controlling what occurs when authentication succeeds or fails.
+
+[http://passportjs.org/](http://passportjs.org/)
+
+[https://github.com/jaredhanson/passport](https://github.com/jaredhanson/passport)
