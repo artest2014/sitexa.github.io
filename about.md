@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This website is maintained by Oscar Peng, a software engineer, interesting in interest technologies in software industry.
+This website is maintained by Oscar Peng. I am a software engineer, interesting in interest technologies in software industry.
 
 ## Site map
 ---------------------------------------------------------------
