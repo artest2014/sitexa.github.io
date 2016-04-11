@@ -10,7 +10,6 @@ It is currently available for most frameworks / tools and supports most authenti
 
 ![image](/images/Pac4j.png)
 
-
 ##pac4j-core:
 
 This is the core module of the project with the core classes/interfaces:
