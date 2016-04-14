@@ -4,11 +4,6 @@ title: The Road Not Taken
 category: 'technology'
 ---
 
-The Road Not Taken
-==================
-
-Robert Frost
-
 Two roads diverged in a yellow wood,
 
 And sorry I could not travel both
