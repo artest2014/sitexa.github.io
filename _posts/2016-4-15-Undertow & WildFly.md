@@ -35,20 +35,7 @@ There and two main ways that Undertow can be used, either by directly embedding 
 
 WildFly is a flexible, lightweight, managed application runtime that helps you build amazing applications.
 
- _       ___ __    __________         _______
-| |     / (_) /___/ / ____/ /_  __   <  / __ \
-| | /| / / / / __  / /_  / / / / /   / / / / /
-| |/ |/ / / / /_/ / __/ / / /_/ /   / / /_/ /
-|__/|__/_/_/\__,_/_/   /_/\__, /   /_/\____/
-                         /____/
-
-Welcome to WildFly (formerly known as JBoss Application Server)
-http://www.wildfly.org/
-
-Go to the above link for documentation, and additional downloads.
-
-Also, once WildFly is started you can go to http://localhost:8080/
-for additional information.
+(formerly known as JBoss Application Server)
 
 
 Key Features
