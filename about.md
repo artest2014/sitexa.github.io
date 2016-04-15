@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This website is maintained by Oscar Peng. I am a software engineer.
+This website is maintained by Oscar Peng. I am a software developer.
 
 ## Site map
 ---------------------------------------------------------------
