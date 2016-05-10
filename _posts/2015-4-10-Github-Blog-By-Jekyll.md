@@ -13,8 +13,10 @@ category: 'jekyll'
     每个项目只有一个，且为：sitexa.github.io/sns。其地址为：http://sitexa.github.io/sns
 
 3, 域名映射
-   （1）在sitexa.github.io的master目录下建立CNAME, 内容为：www.sitexa.org
-   （2）在sitexa.org的域名服务器上建立别名：www.sitexa.org CNAME sitexa.github.io
+
+-   （1）在sitexa.github.io的master目录下建立CNAME, 内容为：www.sitexa.org
+-   （2）在sitexa.org的域名服务器上建立别名：www.sitexa.org CNAME sitexa.github.io
+
 访问:http://sitexa.github.io --> http://www.sitexa.org
 
 4，使用Ruby编程语言；
