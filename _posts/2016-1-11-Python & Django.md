@@ -4,7 +4,7 @@ title: Python & Django & Django-rest-framework
 category: 'technology'
 ---
 
-##Python
+## Python
 
 Python is powerful... and fast; 
 plays well with others; 
@@ -13,7 +13,7 @@ is friendly & easy to learn;
 is Open.
 These are some of the reasons people who use Python would rather not use anything else.
 
-##Django
+## Django
 
 Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Thanks for checking it out.
 
@@ -26,7 +26,7 @@ All documentation is in the "docs" directory and online at https://docs.djangopr
 -   See docs/README for instructions on building an HTML version of the docs.
 
 
-##Django-rest-framework
+## Django-rest-framework
 
 Django REST framework is a powerful and flexible toolkit for building Web APIs.
 

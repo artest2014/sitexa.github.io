@@ -4,19 +4,19 @@ title: 配置ubuntu的telnet服务
 category: 'ubuntu'
 ---
 
-##1.安装xinetd 以及telnetd
+## 1.安装xinetd 以及telnetd
 
     $ sudo apt-get install xinetd telnetd
 
-##2.配置文件
+## 2.配置文件
 
-###A. /etc/inetd.conf
+### A. /etc/inetd.conf
 
     $ cat /etc/inetd.conf （如果存在就不需要了）
 
 显示telnet stream tcp nowait telnetd /usr/sbin/tcpd /usr/sbin/in.telnetd
 
-###B. 修改/etc/xinetd.conf
+### B. 修改/etc/xinetd.conf
 
     $ sudo gedit /etc/xinetd.conf
 
@@ -38,7 +38,7 @@ category: 'ubuntu'
 
     includedir /etc/xinetd.d
 
-###C.修改/etc/xinetd.d/telnet
+### C.修改/etc/xinetd.d/telnet
 
     $ sudo gedit /etc/xinetd.d/telnet
 
@@ -58,8 +58,8 @@ category: 'ubuntu'
         log_on_failure += USERID
     }
 
-##3. 重启机器或重启网络服务##
+## 3. 重启机器或重启网络服务##
 
     $ sudo /etc/init.d/xinetd restart
 
-##4. 使用TELNET客户端远程登录；ifconfig -a显示本机地址##
+## 4. 使用TELNET客户端远程登录；ifconfig -a显示本机地址##

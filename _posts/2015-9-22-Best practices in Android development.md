@@ -6,35 +6,35 @@ category: 'java'
 
 Lessons learned from Android developers in [Futurice](http://www.futurice.com). Avoid reinventing the wheel by following these guidelines. If you are interested in iOS or Windows Phone development, be sure to check also our [**iOS Good Practices**](https://github.com/futurice/ios-good-practices) and [**Windows App Development Best Practices**](https://github.com/futurice/windows-app-development-best-practices) documents.
 
-## Summary
+##  Summary
 
-#### Use Gradle and its recommended project structure
-#### Put passwords and sensitive data in gradle.properties
-#### Don't write your own HTTP client, use Volley or OkHttp libraries
-#### Use the Jackson library to parse JSON data
-#### Avoid Guava and use only a few libraries due to the *65k method limit*
-#### Use Fragments to represent a UI screen
-#### Use Activities just to manage Fragments
-#### Layout XMLs are code, organize them well
-#### Use styles to avoid duplicate attributes in layout XMLs
-#### Use multiple style files to avoid a single huge one
-#### Keep your colors.xml short and DRY, just define the palette
-#### Also keep dimens.xml DRY, define generic constants
-#### Do not make a deep hierarchy of ViewGroups
-#### Avoid client-side processing for WebViews, and beware of leaks
-#### Use Robolectric for unit tests, Robotium for connected (UI) tests
-#### Use Genymotion as your emulator
-#### Always use ProGuard or DexGuard
-#### Use SharedPreferences for simple persistence, otherwise ContentProviders
+####   Use Gradle and its recommended project structure
+####   Put passwords and sensitive data in gradle.properties
+####   Don't write your own HTTP client, use Volley or OkHttp libraries
+####   Use the Jackson library to parse JSON data
+####   Avoid Guava and use only a few libraries due to the *65k method limit*
+####   Use Fragments to represent a UI screen
+####   Use Activities just to manage Fragments
+####   Layout XMLs are code, organize them well
+####   Use styles to avoid duplicate attributes in layout XMLs
+####   Use multiple style files to avoid a single huge one
+####   Keep your colors.xml short and DRY, just define the palette
+####   Also keep dimens.xml DRY, define generic constants
+####   Do not make a deep hierarchy of ViewGroups
+####   Avoid client-side processing for WebViews, and beware of leaks
+####   Use Robolectric for unit tests, Robotium for connected (UI) tests
+####   Use Genymotion as your emulator
+####   Always use ProGuard or DexGuard
+####   Use SharedPreferences for simple persistence, otherwise ContentProviders
 
 
 ----------
 
-### Android SDK
+###  Android SDK
 
 Place your [Android SDK](https://developer.android.com/sdk/installing/index.html?pkg=tools) somewhere in your home directory or some other application-independent location. Some IDEs include the SDK when installed, and may place it under the same directory as the IDE. This can be bad when you need to upgrade (or reinstall) the IDE, or when changing IDEs. Also avoid putting the SDK in another system-level directory that might need sudo permissions, if your IDE is running under your user and not under root.
 
-### Build system
+###  Build system
 
 Your default option should be [Gradle](http://tools.android.com/tech-docs/new-build-system). Ant is much more limited and also more verbose. With Gradle, it's simple to:
 
@@ -46,7 +46,7 @@ Your default option should be [Gradle](http://tools.android.com/tech-docs/new-bu
 
 Android's Gradle plugin is also being actively developed by Google as the new standard build system.
 
-### Project structure
+###  Project structure
 
 There are two popular options: the old Ant & Eclipse ADT project structure, and the new Gradle & Android Studio project structure. You should choose the new project structure. If your project uses the old structure, consider it legacy and start porting it to the new structure.
 
@@ -91,7 +91,7 @@ The main difference is that the new structure explicitly separates 'source sets'
 
 Having a top-level `app` is useful to distinguish your app from other library projects (e.g., `library-foobar`) that will be referenced in your app. The `settings.gradle` then keeps references to these library projects, which `app/build.gradle` can reference to.
 
-### Gradle configuration
+###  Gradle configuration
 
 **General structure.** Follow [Google's guide on Gradle for Android](http://tools.android.com/tech-docs/new-build-system/user-guide)
 
@@ -149,7 +149,7 @@ dependencies {
 **Avoid Maven dynamic dependency resolution**
 Avoid the use of dynamically versioned, such as `2.1.+` as this may result in different in unstable builds or subtle, untracked differences in behavior between builds. The use of static versions such as `2.1.1` helps create a more stable, predictable and repeatable development environment.
 
-### IDEs and text editors
+###  IDEs and text editors
 
 **Use whatever editor, but it must play nicely with the project structure.** Editors are a personal choice, and it's your responsibility to get your editor functioning according to the project structure and build system.
 
@@ -159,7 +159,7 @@ You can use [Eclipse ADT](https://developer.android.com/sdk/installing/index.htm
 
 Whatever you use, just make sure Gradle and the new project structure remain as the official way of building the application, and avoid adding your editor-specific configuration files to the version control system. For instance, avoid adding an Ant `build.xml` file. Especially don't forget to keep `build.gradle` up-to-date and functioning if you are changing build configurations in Ant. Also, be kind to other developers, don't force them to change their tool of preference.
 
-### Libraries
+###  Libraries
 
 **[Jackson](http://wiki.fasterxml.com/JacksonHome)** is a Java library for converting Objects into JSON and vice-versa. [Gson](https://code.google.com/p/google-gson/) is a popular choice for solving this problem, however we find Jackson to be more performant since it supports alternative ways of processing JSON: streaming, in-memory tree model, and traditional JSON-POJO data binding. Keep in mind, though, that Jackson is a larger library than GSON, so depending on your case, you might prefer GSON to avoid 65k methods limitation. Other alternatives: [Json-smart](https://code.google.com/p/json-smart/) and [Boon JSON](https://github.com/RichardHightower/boon/wiki/Boon-JSON-in-five-minutes)
 
@@ -202,7 +202,7 @@ Android Studio offers code assist support for Java8 lambdas. If you are new to l
 
 **Beware of the dex method limitation, and avoid using many libraries.** Android apps, when packaged as a dex file, have a hard limitation of 65536 referenced methods [[1]](https://medium.com/@rotxed/dex-skys-the-limit-no-65k-methods-is-28e6cb40cf71) [[2]](http://blog.persistent.info/2014/05/per-package-method-counts-for-androids.html) [[3]](http://jakewharton.com/play-services-is-a-monolith/). You will see a fatal error on compilation if you pass the limit. For that reason, use a minimal amount of libraries, and use the [dex-method-counts](https://github.com/mihaip/dex-method-counts) tool to determine which set of libraries can be used in order to stay under the limit. Especially avoid using the Guava library, since it contains over 13k methods.
 
-### Activities and Fragments
+###  Activities and Fragments
 
 There is no consensus among the community nor Futurice developers how to best organize Android architectures with Fragments and Activities. Square even has [a library for building architectures mostly with Views](https://github.com/square/mortar), bypassing the need for Fragments, but this still is not considered a widely recommendable practice in the community.
 
@@ -212,7 +212,7 @@ Because of Android API's history, you can loosely consider Fragments as UI piece
 - Avoid putting too much code in activities. Whenever possible, keep them as lightweight containers, existing in your application primarily for the lifecycle and other important Android-interfacing APIs. Prefer single-fragment activities instead of plain activities - put UI code into the activity's fragment. This makes it reusable in case you need to change it to reside in a tabbed layout, or in a multi-fragment tablet screen. Avoid having an activity without a corresponding fragment, unless you are making an informed decision.
 - Don't abuse Android-level APIs such as heavily relying on Intent for your app's internal workings. You could affect the Android OS or other applications, creating bugs or lag. For instance, it is known that if your app uses Intents for internal communication between your packages, you might incur multi-second lag on user experience if the app was opened just after OS boot.
 
-### Java packages architecture
+###  Java packages architecture
 
 Java architectures for Android applications can be roughly approximated in [Model-View-Controller](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller). In Android, [Fragment and Activity are actually controller classes](http://www.informit.com/articles/article.aspx?p=2126865). On the other hand, they are explicity part of the user interface, hence are also views.
 
@@ -238,7 +238,7 @@ com.futurice.project
    └─ notifications
 ```
 
-### Resources
+###  Resources
 
 **Naming.** Follow the convention of prefixing the type, as in `type_foo_bar.xml`. Examples: `fragment_contact_details.xml`, `view_primary_button.xml`, `activity_main.xml`.
 
@@ -451,7 +451,7 @@ Therefore, try to keep your views hierarchy as flat as possible: learn how to us
 **Beware of problems related to WebViews.** When you must display a web page, for instance for a news article, avoid doing client-side processing to clean the HTML, rather ask for a "*pure*" HTML from the backend programmers. [WebViews can also leak memory](http://stackoverflow.com/questions/3130654/memory-leak-in-webview) when they keep a reference to their Activity, instead of being bound to the ApplicationContext. Avoid using a WebView for simple texts or buttons, prefer TextViews or Buttons.
 
 
-### Test frameworks
+###  Test frameworks
 
 Android SDK's testing framework is still infant, specially regarding UI tests. Android Gradle currently implements a test task called [`connectedAndroidTest`](http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Testing) which runs JUnit tests that you created, using an [extension of JUnit with helpers for Android](http://developer.android.com/reference/android/test/package-summary.html). This means you will need to run tests connected to a device, or an emulator. Follow the official guide [[1]](http://developer.android.com/tools/testing/testing_android.html) [[2]](http://developer.android.com/tools/testing/activity_test.html) for testing.
 
@@ -467,13 +467,13 @@ solo.clickOnText("Edit File Extensions");
 Assert.assertTrue(solo.searchText("rtf"));
 ```
 
-### Emulators
+###  Emulators
 
 If you are developing Android apps as a profession, buy a license for the [Genymotion emulator](http://www.genymotion.com/). Genymotion emulators run at a faster frames/sec rate than typical AVD emulators. They have tools for demoing your app, emulating network connection quality, GPS positions, etc. They are also ideal for connected tests. You have access to many (not all) different devices, so the cost of a Genymotion license is actually much cheaper than buying multiple real devices.
 
 Caveats are: Genymotion emulators don't ship all Google services such as Google Play Store and Maps. You might also need to test Samsung-specific APIs, so it's necessary to have a real Samsung device.
 
-### Proguard configuration
+###  Proguard configuration
 
 [ProGuard](http://proguard.sourceforge.net/) is normally used on Android projects to shrink and obfuscate the packaged code.
 
@@ -523,10 +523,10 @@ Read more at [Proguard](http://proguard.sourceforge.net/#manual/examples.html) f
 
 **DexGuard**. If you need hard-core tools for optimizing, and specially obfuscating release code, consider [DexGuard](http://www.saikoa.com/dexguard), a commercial software made by the same team that built ProGuard. It can also easily split Dex files to solve the 65k methods limitation.
 
-### Data storage
+###  Data storage
 
 
-#### SharedPreferences
+####   SharedPreferences
 
 If you only need to persist simple flags and your application runs in a single process SharedPreferences is probably enough for you. It is a good default option.
 
@@ -536,7 +536,7 @@ There are two reasons why you might not want to use SharedPreferences:
 * *Multiple processes accessing the data*: You have widgets or remote services that run in their own processes and require synchronized data
 
 
-#### ContentProviders
+####   ContentProviders
 
 In the case SharedPreferences is not enough for you, you should use the platform standard ContentProviders, which are fast and process safe.
 
@@ -545,16 +545,16 @@ The single problem with ContentProviders is the amount of boilerplate code that 
 You still need to write some parsing code yourself to read the data objects from the Sqlite columns and vice versa. It is possible to serialize the data objects, for instance with Gson, and only persist the resulting string. In this way you lose in performance but on the other hand you do not need to declare a column for all the fields of the data class.
 
 
-#### Using an ORM
+####   Using an ORM
 
 We generally do not recommend using an Object-Relation Mapping library unless you have unusually complex data and you have a dire need. They tend to be complex and require time to learn. If you decide to go with an ORM you should pay attention to whether or not it is _process safe_ if your application requires it, as many of the existing ORM solutions surprisingly are not.
 
 
-### Thanks to
+###  Thanks to
 
 Antti Lammi, Joni Karppinen, Peter Tackage, Timo Tuominen, Vera Izrailit, Vihtori Mäntylä, Mark Voit, Andre Medeiros, Paul Houghton and other Futurice developers for sharing their knowledge on Android development.
 
-### License
+###  License
 
 [Futurice Oy](http://www.futurice.com)
 Creative Commons Attribution 4.0 International (CC BY 4.0)

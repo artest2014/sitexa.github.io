@@ -26,7 +26,7 @@ category: 'technology'
 
 -   v1.3.0重构了微信消息接收控制器，将WeixinSupport类完全独立抽象出来，不再依赖web框架.所以WeixinServletSupport类不再兼容之前的版本，具体使用方法如下:
 
-##基于springmvc项目的集成方法
+## 基于springmvc项目的集成方法
 
     @RestController
     @RequestMapping("/weixin")
@@ -76,7 +76,7 @@ category: 'technology'
             }
     }
     
-##基于servlet项目的集成方法
+## 基于servlet项目的集成方法
 
     public class WeixinServlet extends WeixinServletSupport {
             @Override
@@ -111,7 +111,7 @@ web.xml配置
         <url-pattern>/weixin</url-pattern>
     </servlet-mapping>
     
-##基于Jfinal框架项目的集成方法
+## 基于Jfinal框架项目的集成方法
 
     public class MyJfinalController extends Controller {
         //用户自行实现的消息处理器
@@ -130,7 +130,7 @@ web.xml配置
             }
     }
     
-##Maven 项目引入
+## Maven 项目引入
 
     <dependency>
         <groupId>com.github.sd4324530</groupId>

@@ -4,23 +4,23 @@ title: npm & nodejs & brew and install nodejs module express
 category: 'nodejs'
 ---
 
-##1,安装nodejs
+## 1,安装nodejs
     $ brew install nodejs
 
     /usr/local/etc/bash_completion.d
     /usr/local/Cellar/node/5.0.0:2824 files,36M
 
-##2,下载npm
+## 2,下载npm
     $ git clone --recursive git://github.com/isaacs/npm.git
 
-##3, 进到npm目录下，运行下面的命令安装：
+## 3, 进到npm目录下，运行下面的命令安装：
     $ node cli.js install npm -gf  
 
     /usr/local/Cellar/node/5.0.0/bin/npm -> /usr/local/Cellar/node/5.0.0/lib/node_modules/npm/bin/npm-cli.js
     /usr/local/Cellar/node/5.0.0/lib
     └── npm@3.3.12
 
-##4，安装express模块：
+## 4，安装express模块：
     $ npm install express -gf
 
     /usr/local/lib

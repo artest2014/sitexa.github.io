@@ -4,7 +4,7 @@ title: briefcase - topics of these days
 category: 'technology'
 ---
 
-##Umbraco CMS
+## Umbraco CMS
 
 Umbraco is a free open source Content Management System built on the ASP.NET platform.
 
@@ -12,13 +12,13 @@ For the first time on the Microsoft platform, there is a free user and developer
 
 Used by more than 350,000 active websites including http://daviscup.com, http://heinz.com, http://peugeot.com, http://www.hersheys.com/ and The Official ASP.NET and IIS.NET website from Microsoft (http://asp.net / http://iis.net), you can be sure that the technology is proven, stable and scales.
 
-##Wasabi HTTP framework
+## Wasabi HTTP framework
 
 An HTTP Framework built with Kotlin for the JVM.
 
 Wasabi combines the conciseness and expressiveness of Kotlin, the power of Netty and the simplicity of Express.js (and other Sinatra-inspired web frameworks) to provide an easy to use HTTP framework.
 
-###start script
+### start script
 
 build.gradle
 
@@ -80,7 +80,7 @@ screenshot
 
 ![image](/images/wasabi.jpg)
 
-##ktor
+## ktor
 
 Web backend framework for Kotlin.
 
@@ -99,7 +99,7 @@ Web backend framework for Kotlin.
         <version>LATEST</version>
     </dependency>
     
-##netty
+## netty
 
 >Netty is an asynchronous event-driven network application framework 
 >for rapid development of maintainable high performance protocol servers & clients.
@@ -135,13 +135,13 @@ reference
 
 [https://github.com/netty/netty](https://github.com/netty/netty)
 
-##web.py
+## web.py
 
 web.py is a web framework for Python that is as simple as it is powerful. web.py is in the public domain; you can use it for whatever purpose with absolutely no restrictions.
 
 web.py was originally published while Aaron Swartz worked at reddit.com, where the site used it as it grew to become one of the top 1000 sites according to Alexa and served millions of daily page views. "It's the anti-framework framework. web.py doesn't get in your way," explained founder Steve Huffman.
 
-####The web.py Philosophy
+####  The web.py Philosophy
 
 The web.py slogan is: "Think about the ideal way to write a web app. Write the code to make it happen."
 
@@ -157,7 +157,7 @@ In response to someone complaining about web.py having "yet another template lan
 
 -   You can disagree that these ways are better and say why. But simply criticizing them for being different is a waste of time. Yes, they are different. That's the whole point.
 
-##Web2py web framework
+## Web2py web framework
 
 Free open source full-stack framework for rapid development of fast, scalable, secure and portable database-driven web-based applications. Written and programmable in Python.
 
@@ -172,7 +172,7 @@ Free open source full-stack framework for rapid development of fast, scalable, s
 -   Speaks multiple protocols HTML/XML, RSS/ATOM, RTF, PDF, JSON, AJAX, XML-RPC, CSV, REST, WIKI, Flash/AMF, and Linked Data (RDF).
 -   Includes an SSL-enabled and streaming-capable web server, a relational database, a web-based integrated development environment and web-based management interface, a Database Abstraction Layer that writes SQL for you in real time, internationalization support, multiple authentication methods, role based access control, an error logging and ticketing system, multiple caching methods for scalability, the jQuery library for AJAX and effects, and a scaffolding application to jumpstart development.
 
-##Stream Framework
+## Stream Framework
 
 Stream Framework is a python library which allows you to build activity streams & newsfeeds using Cassandra and/or Redis. If you're not using python have a look at Stream, which supports Node, Ruby, PHP, Python, Go, Scala, Java and REST.
 
@@ -184,11 +184,11 @@ Examples of what you can build are:
 -   Facebook style newsfeeds
 -   A notification system
 
-##stream
+## stream
 
 Stream allows you to build scalable newsfeed and activity streams in hours instead of weeks. The documentation will get you up and running quickly. At the moment we have official clients for Ruby, JS/Node, Python, PHP and Java. There are framework integrations available for Rails, Django, Laravel and NodeJS. These framework integrations hook straight into your ORM which makes integration a breeze.
 
-##XMPP & WebRTC
+## XMPP & WebRTC
 
 Extensible Messaging and Presence Protocol (XMPP) is an open XML technology for real-time communication, which powers a wide range of applications including instant messaging, presence and collaboration.
 
@@ -200,18 +200,18 @@ Key XMPP technologies:
 -   PubSub — alerts and notifications for data syndication, rich presence, and more
 -   BOSH — an HTTP binding for XMPP (and other) traffic
 
-##MongooseIM
+## MongooseIM
 
 MongooseIM is Erlang Solutions' robust and efficient XMPP server aimed at large installations. Specifically designed for enterprise purposes, it is fault-tolerant, can utilize resources of multiple clustered machines and easily scale in need of more capacity (by just adding a box/VM).
 
 MongooseIM can accept client sessions over vanilla XMPP, Websockets, and HTTP long-polling (a.k.a. BOSH).
 
-##Satellizer
+## Satellizer
 
 Satellizer is a simple to use, end-to-end, token-based authentication module for AngularJS with built-in support for Google, Facebook, LinkedIn, Twitter, Instagram, GitHub, Bitbucket, Yahoo, Twitch, Microsoft (Windows Live) OAuth providers, as well as Email and Password sign-in. However, you are not limited to the sign-in options above, in fact you can add any OAuth 1.0 or OAuth 2.0 provider by passing provider-specific information in the app config block.
 
 
-##Devise 
+## Devise
 
 Devise is a flexible authentication solution for Rails based on Warden. It:
 
@@ -233,13 +233,13 @@ It's composed of 10 modules:
 -   Validatable: provides validations of email and password. It's optional and can be customized, so you're able to define your own validations.
 -   Lockable: locks an account after a specified number of failed sign-in attempts. Can unlock via email or after a specified time period.
 
-##RetroAuth
+## RetroAuth
 
 Android library build on top of retrofit, for simple handling of authenticated requests.
 
 [https://github.com/andretietz/retroauth](https://github.com/andretietz/retroauth)
 
-### Sequence Diagrams
+###  Sequence Diagrams
 
 1.When you execute your first authenticated request on a device, this is going to happen inside of retroauth:
 ![image](/images/retroauth1.png)
@@ -253,7 +253,7 @@ Android library build on top of retrofit, for simple handling of authenticated r
 4.When you have at least on account, an active one is set but your token is not vaild (anymore)
 ![image](/images/retroauth4.png)
 
-##Passport
+## Passport
 
 Passport is Express-compatible authentication middleware for Node.js.
 

@@ -8,7 +8,7 @@ category: 'life'
 
 Community oriented business, life, social relationship.
 
-##多，多如牛毛。
+## 多，多如牛毛。
 
 -   大牛只有一个，腾讯。
 
@@ -44,7 +44,7 @@ Community oriented business, life, social relationship.
 
 江湖还有大牛吗？没有了。
 
-##只有创新，才能闯出一片新天地
+## 只有创新，才能闯出一片新天地
 
 创新，颠覆式创新，不是跟BAT抢市场，而是创造一个新市场。
 
@@ -64,7 +64,7 @@ Spark,Kotlin,Koa,Nodejs,MongoDB,Redis,Java,Swift,Android,iOS. That's enough!
 
 PHP? No! .NET? No! Java? No! Ruby? No! Go? No!
 
-##不跟随，不依赖
+## 不跟随，不依赖
 
 不依赖微信，不依赖微支付，不依赖公众平台，不依赖就是不依赖。
 
@@ -76,7 +76,7 @@ PHP? No! .NET? No! Java? No! Ruby? No! Go? No!
 
 而是根据自身需要，才去使用什么技术。
 
-##技术创新，才是真正创新
+## 技术创新，才是真正创新
 
 跟屁虫，永远会被别人甩在后面。
 

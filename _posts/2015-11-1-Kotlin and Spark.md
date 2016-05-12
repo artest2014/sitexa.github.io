@@ -4,13 +4,13 @@ title: Kotlin and Spark
 category: 'java'
 ---
 
-##1.Kotlin
+## 1.Kotlin
 
 Kotlin is a new programming language from Jetbrains, the makers of some of the best programming tools in the business, including Intellij IDEA, an IDE for Java and other languages. As a leader in the Java community, Jetbrains understands the pains of Java and the many benefits of the JVM. Not wanting to throw the baby out with the bathwater, Jetbrains designed Kotlin to run on the JVM to get the best out of that platform.
 
 They didn’t constrain it to this runtime, however — developers can also compile their Kotlin code into JavaScript, allowing it to be used in environments like Node.js. To work with untyped and typed environments like these, Kotlin is statically typed by default, but allows developers to define dynamic types as well. This balance provides great power and many opportunities.       
 
-##2.Why Kotlin?
+## 2.Why Kotlin?
         
 Mike Hearn does a spectacular job explaining why you should consider using Kotlin. In his article, he lists the following reasons:
 
@@ -25,7 +25,7 @@ Mike Hearn does a spectacular job explaining why you should consider using Kotli
 +   Kotlin is highly suitable for enterprise Java shops
 +   It has the strong commercial support of an established software company
         
-##3.the API’s entry point
+## 3.the API’s entry point
         
 
     fun main(args: Array<String>) = api(composer = ContainerComposer())
@@ -49,7 +49,7 @@ We get in browser:
 <image src="/images/kotlin2.png">
     
        
-##4.Functions and Constructors
+## 4.Functions and Constructors
        
 To create our Domain Specific Language (DSL) for hosting APIs, we’re using several of Kotlin’s syntactic novelties and language features. Firstly:
 
@@ -60,7 +60,7 @@ To create our Domain Specific Language (DSL) for hosting APIs, we’re using sev
        
        
 
-###resources:
+### resources:
 
 +   [https://kotlinlang.org](https://kotlinlang.org/)
 +   [http://sparkjava.com](http://sparkjava.com)

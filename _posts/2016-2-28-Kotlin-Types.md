@@ -5,7 +5,7 @@ category: 'technology'
 ---
 
               
-## Numbers
+##  Numbers
 
     Type	Bit width
     Double	64
@@ -15,7 +15,7 @@ category: 'technology'
     Short	16
     Byte	8
     
-## Representation
+##  Representation
 
 Note that boxing of numbers does not preserve identity:
     
@@ -33,7 +33,7 @@ On the other hand, it preserves equality:
     val anotherBoxedA: Int? = a
     print(boxedA == anotherBoxedA) // Prints 'true'
     
-##Explicit Conversions
+## Explicit Conversions
     
     // Hypothetical code, does not actually compile:
     val a: Int? = 1 // A boxed Int (java.lang.Integer)
@@ -54,7 +54,7 @@ On the other hand, it preserves equality:
 -   toChar(): Char
 
 
-##Operations
+## Operations
 
 -   shl(bits) – signed shift left (Java’s <<)
 -   shr(bits) – signed shift right (Java’s >>)
@@ -64,7 +64,7 @@ On the other hand, it preserves equality:
 -   xor(bits) – bitwise xor
 -   inv() – bitwise inversion
     
-##Characters
+## Characters
     
     fun check(c: Char) {
       if (c == 1) { // ERROR: incompatible types
@@ -78,13 +78,13 @@ On the other hand, it preserves equality:
       return c.toInt() - '0'.toInt() // Explicit conversions to numbers
     }
     
-##Booleans : true or false
+## Booleans : true or false
     
 -   || – lazy disjunction
 -   && – lazy conjunction
 -   ! - negation    
 
-##Arrays
+## Arrays
 
     class Array<T> private constructor() {
       val size: Int
@@ -101,7 +101,7 @@ On the other hand, it preserves equality:
     val x: IntArray = intArrayOf(1, 2, 3)
     x[0] = x[1] + x[2]
     
-##Strings
+## Strings
 
     for (c in str) {
       println(c)
@@ -114,7 +114,7 @@ On the other hand, it preserves equality:
         print(c)
     """
     
-##String Templates
+## String Templates
     
     val i = 10
     val s = "i = $i" // evaluates to "i = 10"

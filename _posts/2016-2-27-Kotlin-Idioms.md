@@ -5,7 +5,7 @@ category: 'technology'
 ---
 
               
-## com.sitexa.syntax.basic.Idioms.kt
+##  com.sitexa.syntax.basic.Idioms.kt
 
     package com.sitexa.syntax.basic
     

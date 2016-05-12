@@ -6,7 +6,7 @@ category: 'technology'
 
 Passport is authentication middleware for Node.js. Extremely flexible and modular, Passport can be unobtrusively dropped in to any Express-based web application. A comprehensive set of strategies support authentication using a username and password, Facebook, Twitter, and more.
 
-##Overview
+## Overview
 
 Passport is authentication middleware for Node. It is designed to serve a singular purpose: authenticate requests. When writing modules, encapsulation is a virtue, so Passport delegates all other functionality to the application. This separation of concerns keeps code clean and maintainable, and makes Passport extremely easy to integrate into an application.
 
@@ -18,7 +18,7 @@ Despite the complexities involved in authentication, code does not have to be co
 
     app.post('/login', passport.authenticate('local', { successRedirect: '/',failureRedirect: '/login' }));
     
-##Authenticate
+## Authenticate
 
     app.post('/login',
       passport.authenticate('local'),
@@ -28,12 +28,12 @@ Despite the complexities involved in authentication, code does not have to be co
         res.redirect('/users/' + req.user.username);
       });
       
-###Redirects
+### Redirects
 
     app.post('/login',
       passport.authenticate('local', { successRedirect: '/',failureRedirect: '/login' }));
   
-###Flash Messages
+### Flash Messages
   
     app.post('/login',
       passport.authenticate('local', { successRedirect: '/',
@@ -45,7 +45,7 @@ Despite the complexities involved in authentication, code does not have to be co
     
     passport.authenticate('local', { successFlash: 'Welcome!' });
         
-###Disable Sessions
+### Disable Sessions
         
     app.get('/api/users/me',
       passport.authenticate('basic', { session: false }),
@@ -53,7 +53,7 @@ Despite the complexities involved in authentication, code does not have to be co
         res.json({ id: req.user.id, username: req.user.username });
       });
       
-###Custom Callback
+### Custom Callback
       
     app.get('/login', function(req, res, next) {
       passport.authenticate('local', function(err, user, info) {
@@ -66,7 +66,7 @@ Despite the complexities involved in authentication, code does not have to be co
       })(req, res, next);
     });
     
-##Configure
+## Configure
     
 Three pieces need to be configured to use Passport for authentication:
     
@@ -74,7 +74,7 @@ Three pieces need to be configured to use Passport for authentication:
 -    Application middleware
 -    Sessions (optional)
 
-###Strategies
+### Strategies
    
     var passport = require('passport')
       , LocalStrategy = require('passport-local').Strategy;
@@ -94,14 +94,14 @@ Three pieces need to be configured to use Passport for authentication:
       }
     ));
     
-###Verify Callback
+### Verify Callback
     
     return done(null, user);
     return done(null, false);
     return done(null, false, { message: 'Incorrect password.' });
     return done(err);
     
-###Middleware
+### Middleware
     
 In a Connect or Express-based application, passport.initialize() middleware is required to initialize Passport. If your application uses persistent login sessions, passport.session() middleware must also be used.
     
@@ -117,7 +117,7 @@ In a Connect or Express-based application, passport.initialize() middleware is r
         
 Note that enabling session support is entirely optional, though it is recommended for most applications. If enabled, be sure to use express.session() before passport.session() to ensure that the login session is restored in the correct order.
 
-###Sessions
+### Sessions
 
 In a typical web application, the credentials used to authenticate a user will only be transmitted during the login request. If authentication succeeds, a session will be established and maintained via a cookie set in the user's browser.
 
@@ -133,15 +133,15 @@ Each subsequent request will not contain credentials, but rather the unique cook
       });
     });
             
-##Username & Password
+## Username & Password
 
 The most widely used way for websites to authenticate users is via a username and password. Support for this mechanism is provided by the passport-local module.
 
-###Install
+### Install
 
     $ npm install passport-local
     
-###Configuration
+### Configuration
     
     var passport = require('passport')
       , LocalStrategy = require('passport-local').Strategy;
@@ -161,7 +161,7 @@ The most widely used way for websites to authenticate users is via a username an
       }
     ));    
     
-###Form
+### Form
 
     <form action="/login" method="post">
         <div>
@@ -177,7 +177,7 @@ The most widely used way for websites to authenticate users is via a username an
         </div>
     </form>
     
-###Route
+### Route
     
     app.post('/login',
       passport.authenticate('local', { successRedirect: '/',
@@ -185,7 +185,7 @@ The most widely used way for websites to authenticate users is via a username an
                                        failureFlash: true })
     );
     
-###Parameters
+### Parameters
     
     passport.use(new LocalStrategy({
         usernameField: 'email',
@@ -196,17 +196,17 @@ The most widely used way for websites to authenticate users is via a username an
       }
     ));
     
-##OpenID
+## OpenID
     
 OpenID is an open standard for federated authentication. When visiting a website, users present their OpenID to sign in. The user then authenticates with their chosen OpenID provider, which issues an assertion to confirm the user's identity. The website verifies this assertion in order to sign the user in.
 
 Support for OpenID is provided by the passport-openid module.
     
-###Install
+### Install
 
     $ npm install passport-openid
     
-###Configuration
+### Configuration
     
     var passport = require('passport')
       , OpenIDStrategy = require('passport-openid').Strategy;
@@ -222,7 +222,7 @@ Support for OpenID is provided by the passport-openid module.
       }
     ));
     
-###Form
+### Form
     
     <form action="/auth/openid" method="post">
         <div>
@@ -234,7 +234,7 @@ Support for OpenID is provided by the passport-openid module.
         </div>
     </form>
     
-###Routes
+### Routes
 
     // Accept the OpenID identifier and redirect the user to their OpenID
     // provider for authentication.  When complete, the provider will redirect
@@ -249,7 +249,7 @@ Support for OpenID is provided by the passport-openid module.
       passport.authenticate('openid', { successRedirect: '/',
                                         failureRedirect: '/login' }));
                                         
-###Profile Exchange
+### Profile Exchange
 
     passport.use(new OpenIDStrategy({
         returnURL: 'http://www.example.com/auth/openid/return',
@@ -261,7 +261,7 @@ Support for OpenID is provided by the passport-openid module.
       }
     ));
     
-##OAuth
+## OAuth
     
 OAuth is a standard protocol that allows users to authorize API access to web and desktop or mobile applications. Once access has been granted, the authorized application can utilize the API on behalf of the user. OAuth has also emerged as a popular mechanism for delegated authentication.
     
@@ -271,13 +271,13 @@ Recent efforts undertaken by the Web Authorization Protocol Working Group have f
     
 Support for OAuth is provided by the passport-oauth module.
     
-###Install
+### Install
     
     $ npm install passport-oauth
     
-###OAuth 1.0
+### OAuth 1.0
     
-###Configuration    
+### Configuration
     
     var passport = require('passport')
       , OAuthStrategy = require('passport-oauth').OAuthStrategy;
@@ -297,7 +297,7 @@ Support for OAuth is provided by the passport-oauth module.
       }
     ));    
     
-###Routes
+### Routes
     
     // Redirect the user to the OAuth provider for authentication.  When
     // complete, the provider will redirect the user back to the application at
@@ -312,15 +312,15 @@ Support for OAuth is provided by the passport-oauth module.
         passport.authenticate('provider', { successRedirect: '/',
                                           failureRedirect: '/login' }));
                                           
-###Link
+### Link
 
     <a href="/auth/provider">Log In with OAuth Provider</a>
     
-##OAuth 2.0
+## OAuth 2.0
 
 OAuth 2.0 is the successor to OAuth 1.0, and is designed to overcome perceived shortcomings in the earlier version. The authentication flow is essentially the same. The user is first redirected to the service provider to authorize access. After authorization has been granted, the user is redirected back to the application with a code that can be exchanged for an access token. The application requesting access, known as a client, is identified by an ID and secret.
 
-###Configuration
+### Configuration
 
 When using the generic OAuth 2.0 strategy, the client ID, client secret, and endpoints are specified as options.
 
@@ -341,7 +341,7 @@ When using the generic OAuth 2.0 strategy, the client ID, client secret, and end
       }
     ));
     
-###Routes
+### Routes
     
     // Redirect the user to the OAuth 2.0 provider for authentication.  When
     // complete, the provider will redirect the user back to the application at
@@ -356,7 +356,7 @@ When using the generic OAuth 2.0 strategy, the client ID, client secret, and end
       passport.authenticate('provider', { successRedirect: '/',
                                           failureRedirect: '/login' }));
                                               
-###Scope
+### Scope
 
     app.get('/auth/provider',
       passport.authenticate('provider', { scope: 'email' })
@@ -366,11 +366,11 @@ When using the generic OAuth 2.0 strategy, the client ID, client secret, and end
       passport.authenticate('provider', { scope: ['email', 'sms'] })
     );
     
-###Link
+### Link
 
     <a href="/auth/provider">Log In with OAuth 2.0 Provider</a>
     
-##User Profile
+## User Profile
 
 -    provider {String}
      The provider with which the user authenticated (facebook, twitter, etc.).
@@ -394,17 +394,17 @@ When using the generic OAuth 2.0 strategy, the client ID, client secret, and end
     -   value {String}
         The URL of the image.
 
-##Facebook
+## Facebook
 
 The Facebook strategy allows users to log in to a web application using their Facebook account. Internally, Facebook authentication works using OAuth 2.0.
 
 Support for Facebook is implemented by the passport-facebook module.
 
-###Install
+### Install
 
     $ npm install passport-facebook
     
-###Configuration
+### Configuration
 
     var passport = require('passport')
       , FacebookStrategy = require('passport-facebook').Strategy;
@@ -422,7 +422,7 @@ Support for Facebook is implemented by the passport-facebook module.
       }
     ));
     
-###Routes
+### Routes
 
     // Redirect the user to Facebook for authentication.  When complete,
     // Facebook will redirect the user back to the application at
@@ -437,7 +437,7 @@ Support for Facebook is implemented by the passport-facebook module.
       passport.authenticate('facebook', { successRedirect: '/',
                                           failureRedirect: '/login' }));
                                           
-###Permissions
+### Permissions
 
     app.get('/auth/facebook',
       passport.authenticate('facebook', { scope: 'read_stream' })
@@ -447,21 +447,21 @@ Support for Facebook is implemented by the passport-facebook module.
       passport.authenticate('facebook', { scope: ['read_stream', 'publish_actions'] })
     );
     
-###Link
+### Link
 
     <a href="/auth/facebook">Login with Facebook</a>
     
-##Twitter
+## Twitter
 
 The Twitter strategy allows users to sign in to a web application using their Twitter account. Internally, Twitter authentication works using OAuth 1.0a.
 
 Support for Twitter is implemented by the passport-twitter module.
 
-###Install
+### Install
 
     $ npm install passport-twitter
     
-###Configuration
+### Configuration
 
     var passport = require('passport')
       , TwitterStrategy = require('passport-twitter').Strategy;
@@ -479,7 +479,7 @@ Support for Twitter is implemented by the passport-twitter module.
       }
     ));
     
-###Routes
+### Routes
 
     // Redirect the user to Twitter for authentication.  When complete, Twitter
     // will redirect the user back to the application at
@@ -494,23 +494,23 @@ Support for Twitter is implemented by the passport-twitter module.
       passport.authenticate('twitter', { successRedirect: '/',
                                          failureRedirect: '/login' }));
                                          
-###Link
+### Link
 
     <a href="/auth/twitter">Sign in with Twitter</a>
     
-##Google
+## Google
     
 The Google strategy allows users to sign in to a web application using their Google account. Google used to support OpenID internally, but it now works based on OpenID Connect and supports oAuth 1.0 and oAuth 2.0.
 
 Support for Google is implemented by the passport-google-oauth module.
 
-###Install
+### Install
 
     $ npm install passport-google-oauth
     
-###Configuration
+### Configuration
     
-####oAuth 1.0 - Configuration
+####  oAuth 1.0 - Configuration
 
     var passport = require('passport');
     var GoogleStrategy = require('passport-google-oauth').OAuthStrategy;
@@ -531,7 +531,7 @@ Support for Google is implemented by the passport-google-oauth module.
       }
     ));
     
-####oAuth 1.0 - Routes
+####  oAuth 1.0 - Routes
    
     // GET /auth/google
     //   Use passport.authenticate() as route middleware to authenticate the
@@ -552,7 +552,7 @@ Support for Google is implemented by the passport-google-oauth module.
         res.redirect('/');
       });
       
-####oAuth 2.0 - Configuration
+####  oAuth 2.0 - Configuration
 
     var passport = require('passport');
     var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
@@ -574,7 +574,7 @@ Support for Google is implemented by the passport-google-oauth module.
     ));
     
 
-####oAuth 2.0 - Routes
+####  oAuth 2.0 - Routes
 
     // GET /auth/google
     //   Use passport.authenticate() as route middleware to authenticate the
@@ -595,12 +595,12 @@ Support for Google is implemented by the passport-google-oauth module.
         res.redirect('/');
       });
       
-###Link
+### Link
 
     <a href="/auth/google">Sign In with Google</a>
     
     
-##Basic & Digest
+## Basic & Digest
 
 Along with defining HTTP's authentication framework, RFC 2617 also defined the Basic and Digest authentications schemes. These two schemes both use usernames and passwords as credentials to authenticate users, and are often used to protect API endpoints.
 
@@ -608,11 +608,11 @@ It should be noted that relying on username and password creditials can have adv
 
 Support for Basic and Digest schemes is provided by the passport-http module.
 
-###Install
+### Install
 
     $ npm install passport-http
     
-###Basic - Configuration
+### Basic - Configuration
     
     passport.use(new BasicStrategy(
       function(username, password, done) {
@@ -625,7 +625,7 @@ Support for Basic and Digest schemes is provided by the passport-http module.
       }
     ));
     
-###Basic - Protect Endpoints
+### Basic - Protect Endpoints
 
     app.get('/api/me',
       passport.authenticate('basic', { session: false }),
@@ -633,7 +633,7 @@ Support for Basic and Digest schemes is provided by the passport-http module.
         res.json(req.user);
       });
       
-###Digest - Configuration
+### Digest - Configuration
 
     passport.use(new DigestStrategy({ qop: 'auth' },
       function(username, done) {
@@ -649,7 +649,7 @@ Support for Basic and Digest schemes is provided by the passport-http module.
       }
     ));
     
-###Digest - Protect Endpoints
+### Digest - Protect Endpoints
 
     app.get('/api/me',
       passport.authenticate('digest', { session: false }),
@@ -657,7 +657,7 @@ Support for Basic and Digest schemes is provided by the passport-http module.
         res.json(req.user);
       });
       
-##OAuth
+## OAuth
 
 OAuth (formally specified by RFC 5849) provides a means for users to grant third-party applications access to their data without exposing their password to those applications.
 
@@ -673,11 +673,11 @@ When using OAuth to protect API endpoints, there are three distinct steps that t
 
 Once issued, OAuth tokens can be authenticated using the passport-http-oauth module.
 
-###Install
+### Install
    
     $ npm install passport-http-oauth
     
-###Configuration
+### Configuration
 
     passport.use('token', new TokenStrategy(
       function(consumerKey, done) {
@@ -706,7 +706,7 @@ Once issued, OAuth tokens can be authenticated using the passport-http-oauth mod
       }
     ));
     
-###Protect Endpoints
+### Protect Endpoints
 
     app.get('/api/me',
       passport.authenticate('token', { session: false }),
@@ -714,7 +714,7 @@ Once issued, OAuth tokens can be authenticated using the passport-http-oauth mod
         res.json(req.user);
       });
       
-##OAuth 2.0
+## OAuth 2.0
 
 OAuth 2.0 (formally specified by RFC 6749) provides an authorization framework which allows users to authorize access to third-party applications. When authorized, the application is issued a token to use as an authentication credential. This has two primary security benefits:
 
@@ -728,17 +728,17 @@ When using OAuth 2.0 to protect API endpoints, there are three distinct steps th
 -   A token is issued to the application, if permission is granted by the user.
 -   The application authenticates using the token to access protected resources.
 
-###Bearer Tokens
+### Bearer Tokens
 
 Bearer tokens are the most widely issued type of token in OAuth 2.0. So much so, in fact, that many implementations assume that bearer tokens are the only type of token issued.
 
 Bearer tokens can be authenticated using the passport-http-bearer module.
 
-###Install
+### Install
 
     $ npm install passport-http-bearer
     
-###Configuration
+### Configuration
 
     passport.use(new BearerStrategy(
       function(token, done) {
@@ -750,7 +750,7 @@ Bearer tokens can be authenticated using the passport-http-bearer module.
       }
     ));
     
-###Protect Endpoints
+### Protect Endpoints
 
     app.get('/api/me',
       passport.authenticate('bearer', { session: false }),
@@ -758,7 +758,7 @@ Bearer tokens can be authenticated using the passport-http-bearer module.
         res.json(req.user);
       });
       
-##Log In
+## Log In
 
 Passport exposes a login() function on req (also aliased as logIn()) that can be used to establish a login session.
     
@@ -767,7 +767,7 @@ Passport exposes a login() function on req (also aliased as logIn()) that can be
       return res.redirect('/users/' + req.user.username);
     });
     
-##Log Out
+## Log Out
     
 Passport exposes a logout() function on req (also aliased as logOut()) that can be called from any route handler which needs to terminate a login session. Invoking logout() will remove the req.user property and clear the login session (if any).
 
@@ -777,7 +777,7 @@ Passport exposes a logout() function on req (also aliased as logOut()) that can 
     });
     
 
-##Authorize
+## Authorize
 
 An application may need to incorporate information from multiple third-party services. In this case, the application will request the user to "connect", for example, both their Facebook and Twitter accounts.
 
@@ -804,7 +804,7 @@ Authorization is performed by calling passport.authorize(). If authorization is 
       }
     );
     
-###Configuration
+### Configuration
 
     passport.use('twitter-authz', new TwitterStrategy({
         consumerKey: TWITTER_CONSUMER_KEY,
@@ -826,7 +826,7 @@ Authorization is performed by calling passport.authorize(). If authorization is 
       }
     ));
     
-###Association in Verify Callback
+### Association in Verify Callback
 
     passport.use(new TwitterStrategy({
         consumerKey: TWITTER_CONSUMER_KEY,

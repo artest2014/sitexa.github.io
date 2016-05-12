@@ -4,7 +4,7 @@ title: Rails v4.2 - installation
 category: 'ecommerce'
 ---
 
-##0,installation with gem install rails
+## 0,installation with gem install rails
 
     $ sudo gem install rails
 
@@ -111,7 +111,7 @@ category: 'ecommerce'
     $ rails 4.2.1
 
 
-##1,Create your application skeleton
+## 1,Create your application skeleton
 
     rails new railsapp1
 
@@ -259,7 +259,7 @@ category: 'ecommerce'
     * bin/rake: spring inserted
     * bin/rails: spring inserted
 
-##2,Run you application
+## 2,Run you application
 
     cd railsapp1
     rails server
@@ -424,7 +424,7 @@ restart rails server:
 
 <img src="/images/rubyonrails-env.png" />
 
-##3,Install sqlite3
+## 3,Install sqlite3
 
     sudo gem install sqlite3
 
@@ -437,7 +437,7 @@ see result:
     Done installing documentation for sqlite3 after 0 seconds
     1 gem installed
 
-##4, install ror_ecommerce by RubyMine
+## 4, install ror_ecommerce by RubyMine
 
     clone source :https://github.com/drhenner/ror_ecommerce.git
 

@@ -4,27 +4,27 @@ title: Bazel,a blaze for software build!
 category: 'life'
 ---
 
-##What is Bazel
+## What is Bazel
 Correct, reproducible, fast builds for everyone
 
 Build software of any size, quickly and reliably, just as engineers do at Google.
 
 Bazel is Google's own build tool, now publicly available in Beta. Bazel has built-in support for building both client and server software, including client applications for both Android and iOS platforms. It also provides an extensible framework that you can use to develop your own build rules.
 
-##Installing Bazel
+## Installing Bazel
 
-###System Requirements
+### System Requirements
 
-####Supported platforms:
+####  Supported platforms:
 
 Ubuntu Linux (Utopic 14.10 and Trusty 14.04 LTS)
 Mac OS X
 
-####Java:
+####  Java:
 
 Java JDK 8 or later (JDK 7 is still supported but deprecated).
 
-####Install dependencies
+####  Install dependencies
 
 Ubuntu
 
@@ -62,11 +62,11 @@ Once XCode is installed you can trigger the license signature with the following
 
     $ sudo gcc --version
 
-###Download Bazel
+### Download Bazel
 
 Download the Bazel installer for your operating system.
 
-####Run the installer
+####  Run the installer
 
 Run the installer:
 
@@ -75,7 +75,7 @@ Run the installer:
 
 The --user flag installs Bazel to the $HOME/bin directory on your system and sets the .bazelrc path to $HOME/.bazelrc. Use the --help command to see additional installation options.
 
-####Set up your environment
+####  Set up your environment
 
 If you ran the Bazel installer with the --user flag as above, the Bazel executable is installed in your $HOME/bin directory. It's a good idea to add this directory to your default paths, as follows:
 
@@ -84,25 +84,25 @@ If you ran the Bazel installer with the --user flag as above, the Bazel executab
 You can also add this command to your ~/.bashrc file.
 
 
-##Getting start
+## Getting start
 
-### project root and workspace
+###  project root and workspace
 
 <img src="/images/my-project-1.png"/>
 
-### java source file
+###  java source file
 
 <img src="/images/my-project-2.png"/>
 
-### BUILD file
+###  BUILD file
 
 <img src="/images/my-project-3.png"/>
 
-### run build
+###  run build
 
 <img src="/images/my-project-4.png"/>
 
-### run 
+###  run
 
 <img src="/images/my-project-5.png"/>
 

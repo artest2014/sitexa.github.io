@@ -4,11 +4,11 @@ title: vhosts by apache & tomcat & ajp on mac osx 10.10
 category: 'technology'
 ---
 
-## 1,/etc/apache2/httpd.conf
+##  1,/etc/apache2/httpd.conf
    
     Include /private/etc/apache2/extra/httpd-vhosts.conf
 
-## 2,/etc/apache2/extra/httpd-vhosts.conf
+##  2,/etc/apache2/extra/httpd-vhosts.conf
 
     <VirtualHost *:80>
         ServerAdmin webmaster@dev.sitexa.com
@@ -65,6 +65,6 @@ category: 'technology'
     </VirtualHost>
 
 
-## 3,/etc/hosts
+##  3,/etc/hosts
   
     127.0.0.1       localhost home.sitexa.com dev.sitexa.com wiki.sitexa.com

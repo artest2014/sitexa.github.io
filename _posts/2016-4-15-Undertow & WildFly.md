@@ -4,7 +4,7 @@ title: Undertow & WildFly
 category: 'technology'
 ---
 
-##Undertow
+## Undertow
 
 Undertow is a web server designed to be used for both blocking and non-blocking tasks. Some of its main features are:
 
@@ -31,7 +31,7 @@ There and two main ways that Undertow can be used, either by directly embedding 
     }
     
 
-##WildFly
+## WildFly
 
 WildFly is a flexible, lightweight, managed application runtime that helps you build amazing applications.
 

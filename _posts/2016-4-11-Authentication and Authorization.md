@@ -27,7 +27,7 @@ or to have information that they want to have.
     -   owner
     -   user
     
-##Apache HttpClient
+## Apache HttpClient
 
 HttpClient supports three different types of http authentication schemes: Basic, Digest and NTLM. These can be used to authenticate with http servers or proxies.
 
@@ -65,7 +65,7 @@ HttpClient supports three different types of http authentication schemes: Basic,
     -   NTLM - NTLM is the most complex of the authentication protocols supported by HttpClient. It is a proprietary protocol designed by Microsoft with no publicly available specification. Early version of NTLM were less secure than Digest authentication due to faults in the design, however these were fixed in a service pack for Windows NT 4 and the protocol is now considered more secure than Digest authentication.
 
 
-##Example
+## Example
 
 -    BasicAuthenticationExample.java
 

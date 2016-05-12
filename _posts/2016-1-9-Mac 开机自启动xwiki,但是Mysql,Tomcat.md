@@ -6,7 +6,7 @@ category: 'technology'
 
 在OSX上配置开机自启动xwiki，笔记本环境是OSX10.10,xwiki+mysql+tomcat, 台式机环境是OSX10.11,xwiki+h2+jetty。根据如下方式配置，台式机成功，笔记本失败。
 
-## auto start xwiki----under jetty
+##  auto start xwiki----under jetty
      $ vi /Library/LuanchDaemons/start_xwiki.plist
      <?xml version="1.0" encoding="UTF-8"?>
      <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -28,7 +28,7 @@ category: 'technology'
      </plist>
 
 
-## Mysql开机自启动
+##  Mysql开机自启动
     
     $sudo vi /Library/LaunchDaemons/com.mysql.mysql.plist
     
@@ -59,7 +59,7 @@ $sudo launchctl unload -w
 /Library/LaunchDaemons/com.mysql.mysql.plist
 
 
-##auto start tomcat
+## auto start tomcat
 
     $sudo vi /Library/LaunchDaemons/org.apache.tomcat.plist
     <!--?xml version="1.0" encoding="UTF-8"?-->

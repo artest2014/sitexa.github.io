@@ -15,7 +15,7 @@ Tools and technologies:
 -   pg-promise
 -   bluebird
 
-##Project setup
+## Project setup
 
 Install the Express Generator:
 
@@ -57,7 +57,7 @@ create a new file in the project root called queries.js:
       removePuppy: removePuppy
     };
     
-##Postgres setup
+## Postgres setup
   
 Create a new file also in the root called puppies.sql and then add the following code:
 
@@ -86,7 +86,7 @@ Run the file to create the database, apply the schema, and add one row to the ne
     CREATE TABLE
     INSERT 0 1
     
-##Routes
+## Routes
     
 Now we can set up the route handlers in index.js:
     
@@ -103,11 +103,11 @@ Now we can set up the route handlers in index.js:
     
     module.exports = router;
     
-##Queries
+## Queries
     
 Next, let’s add the SQL queries to the queries.js file.
 
-###GET All Puppies    
+### GET All Puppies
 
     function getAllPuppies(req, res, next) {
       db.any('select * from pups')
@@ -124,7 +124,7 @@ Next, let’s add the SQL queries to the queries.js file.
         });
     }
     
-###GET Single Puppy
+### GET Single Puppy
     
     function getSinglePuppy(req, res, next) {
       var pupID = parseInt(req.params.id);
@@ -144,7 +144,7 @@ Next, let’s add the SQL queries to the queries.js file.
     
     $ curl http://127.0.0.1:3000/api/puppies/1
     
-###POST
+### POST
     
     function createPuppy(req, res, next) {
       req.body.age = parseInt(req.body.age);
@@ -166,7 +166,7 @@ Next, let’s add the SQL queries to the queries.js file.
     $ curl --data "name=Whisky&breed=annoying&age=3&sex=f" \
     http://127.0.0.1:3000/api/puppies
     
-###PUT
+### PUT
     
     function updatePuppy(req, res, next) {
       db.none('update pups set name=$1, breed=$2, age=$3, sex=$4 where id=$5',
@@ -188,7 +188,7 @@ Next, let’s add the SQL queries to the queries.js file.
     http://127.0.0.1:3000/api/puppies/1
     
     
-###Delete
+### Delete
     
     function removePuppy(req, res, next) {
       var pupID = parseInt(req.params.id);
@@ -209,7 +209,7 @@ Next, let’s add the SQL queries to the queries.js file.
     
     $ curl -X DELETE http://127.0.0.1:3000/api/puppies/1
     
-##Error Handling
+## Error Handling
     
     // development error handler
     // will print stacktrace
@@ -233,7 +233,7 @@ Next, let’s add the SQL queries to the queries.js file.
       });
     });
     
-##Questions
+## Questions
     
 1, How to do authentication work for this code in real project?
     

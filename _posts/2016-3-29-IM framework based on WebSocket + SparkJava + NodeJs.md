@@ -4,7 +4,7 @@ title: IM Framework based on WebSocket - SparkJava and NodeJs
 category: 'technology'
 ---
 
-##Node.js and WebSocket
+## Node.js and WebSocket
 
 server:
 
@@ -288,7 +288,7 @@ Run and browse:
 ![image](/images/websocket.jpg)
 
 
-###Video streaming over websockets using JavaScript
+### Video streaming over websockets using JavaScript
 
 What is the fastest way to stream live video using JavaScript? Is WebSockets over TCP a fast enough protocol to stream a video of, say, 30fps?
 
@@ -301,7 +301,7 @@ You need to build a stream API and a Media Stream Transceiver to control the rel
 [Video streaming over websockets using JavaScript](http://stackoverflow.com/questions/4241992/video-streaming-over-websockets-using-javascript)
 
 
-###How do we split our audio/video data in chunks with Python?
+### How do we split our audio/video data in chunks with Python?
 We are currently working on a chat + (file sharing +) video conference application using HTML5 websockets. To make our application more accessible we want to implement Adaptive Streaming, using the following sequence:
 
 -   Raw audio/video data client goes to server
@@ -317,7 +317,7 @@ So.. How do we split our audio/video data in chunks with Python?
 [Chopping media stream in HTML5 websocket server for webbased chat/video conference application](http://stackoverflow.com/questions/4242081/chopping-media-stream-in-html5-websocket-server-for-webbased-chat-video-conferenc)
 
 
-##Spark and WebSocket
+## Spark and WebSocket
 
 Server:
 
@@ -453,7 +453,7 @@ Run and browse:
 
 ![image](/images/spark-websocket.jpg)
 
-###How to stream audio/video data over websocket using javascript?
+### How to stream audio/video data over websocket using javascript?
 
 Use java-ffmpeg wrapper, or simply use java runtime to execute ffmpeg?
 

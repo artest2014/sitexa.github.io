@@ -10,7 +10,7 @@ Design patterns can speed up the development process by providing tested, proven
 
 Reusing design patterns helps to prevent subtle issues that can cause major problems, and it also improves code readability for coders and architects who are familiar with the patterns.
 
-##Abstract Factory
+## Abstract Factory
 
 Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
 
@@ -23,7 +23,7 @@ Use the Abstract Factory pattern when
 -	a family of related product objects is designed to be used together, and you need to enforce this constraint
 -	you want to provide a class library of products, and you want to reveal just their interfaces, not their implementations
 
-##Adapter
+## Adapter
 
 Convert the interface of a class into another interface the clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
 
@@ -35,7 +35,7 @@ Use the Adapter pattern when
 -	you want to create a reusable class that cooperates with unrelated or unforeseen classes, that is, classes that don't necessarily have compatible interfaces
 -	you need to use several existing subclasses, but it's impractical to adapt their interface by subclassing every one. An object adapter can adapt the interface of its parent class.
 
-##Async Method Invocation
+## Async Method Invocation
 
 Asynchronous method invocation is pattern where the calling thread is not blocked while waiting results of tasks. The pattern provides parallel processing of multiple independent tasks and retrieving the results via callbacks or waiting until everything is done.
 
@@ -47,7 +47,7 @@ Use async method invocation pattern when
 -	you need to improve the performance of a group of sequential tasks
 -	you have limited amount of processing capacity or long running tasks and the caller should not wait the tasks to be ready
 
-##Bridge
+## Bridge
 
 Decouple an abstraction from its implementation so that the two can vary independently.
 
@@ -61,7 +61,7 @@ Use the Bridge pattern when
 -	you have a proliferation of classes. Such a class hierarchy indicates the need for splitting an object into two parts. Rumbaugh uses the term "nested generalizations" to refer to such class hierarchies
 -	you want to share an implementation among multiple objects (perhaps using reference counting), and this fact should be hidden from the client. A simple example is Coplien's String class, in which multiple objects can share the same string representation.
 
-##Builder
+## Builder
 
 Separate the construction of a complex object from its representation so that the same construction process can create different representations.
 
@@ -72,7 +72,7 @@ Use the Builder pattern when
 -	the algorithm for creating a complex object should be independent of the parts that make up the object and how they're assembled
 -	the construction process must allow different representations for the object that's constructed
 
-##Business Delegate
+## Business Delegate
 
 The Business Delegate pattern adds an abstraction layer between presentation and business tiers. By using the pattern we gain loose coupling between the tiers and encapsulate knowledge about how to locate, connect to, and interact with the business objects that make up the application.
 
@@ -84,7 +84,7 @@ Use the Business Delegate pattern when
 -	you want to orchestrate calls to multiple business services
 -	you want to encapsulate service lookups and service calls
 
-##Caching
+## Caching
 
 To avoid expensive re-acquisition of resources by not releasing the resources immediately after their use. The resources retain their identity, are kept in some fast-access storage, and are re-used to avoid having to acquire them again.
 
@@ -94,7 +94,7 @@ Use the Caching pattern(s) when
 
 -	Repetitious acquisition, initialization, and release of the same resource causes unnecessary performance overhead.
 
-##Callback
+## Callback
 
 Callback is a piece of executable code that is passed as an argument to other code, which is expected to call back (execute) the argument at some convenient time.
 
@@ -104,7 +104,7 @@ Use the Callback pattern when
 
 -	when some arbitrary synchronous or asynchronous action must be performed after execution of some defined activity.
 
-##Chain of responsibility
+## Chain of responsibility
 
 Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.
 
@@ -116,7 +116,7 @@ Use Chain of Responsibility when
 -	you want to issue a request to one of several objects without specifying the receiver explicitly
 -	the set of objects that can handle a request should be specified dynamically
 
-##Command
+## Command
 
 Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations.
 
@@ -130,7 +130,7 @@ Use the Command pattern when you want to
 -	support logging changes so that they can be reapplied in case of a system crash. By augmenting the Command interface with load and store operations, you can keep a persistent log of changes. Recovering from a crash involves reloading logged commands from disk and re-executing them with the execute operation
 -	structure a system around high-level operations build on primitive operations. Such a structure is common in information systems that support transactions. A transaction encapsulates a set of changes to data. The Command pattern offers a way to model transactions. Commands have a common interface, letting you invoke all transactions the same way. The pattern also makes it easy to extend the system with new transactions
 
-##Composite
+## Composite
 
 Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
 
@@ -141,7 +141,7 @@ Use the Composite pattern when
 -	you want to represent part-whole hierarchies of objects
 -	you want clients to be able to ignore the difference between compositions of objects and individual objects. Clients will treat all objects in the composite structure uniformly
 
-##Data Access Object
+## Data Access Object
 
 Object provides an abstract interface to some type of database or other persistence mechanism.
 
@@ -153,7 +153,7 @@ Use the Data Access Object in any of the following situations
 -	when you want to avoid writing multiple data retrieval/persistence layers
 
 
-##Decorator
+## Decorator
 
 Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
 
@@ -165,7 +165,7 @@ Use Decorator
 -	for responsibilities that can be withdrawn
 -	when extension by subclassing is impractical. Sometimes a large number of independent extensions are possible and would produce an explosion of subclasses to support every combination. Or a class definition may be hidden or otherwise unavailable for subclassing
 
-##Delegation
+## Delegation
 
 It is a technique where an object expresses certain behavior to the outside but in reality delegates responsibility for implementing that behaviour to an associated object.
 
@@ -177,7 +177,7 @@ Use the Delegate pattern in order to achieve the following
 -	Components that behave identically, but realize that this situation can change in the future.
 
 
-##Dependency Injection
+## Dependency Injection
 
 Dependency Injection is a software design pattern in which one or more dependencies (or services) are injected, or passed by reference, into a dependent object (or client) and are made part of the client's state. The pattern separates the creation of a client's dependencies from its own behavior, which allows program designs to be loosely coupled and to follow the inversion of control and single responsibility principles.
 
@@ -188,7 +188,7 @@ Use the Dependency Injection pattern when
 -	when you need to remove knowledge of concrete implementation from object
 -	to enable unit testing of classes in isolation using mock objects or stubs
 
-##Double Checked Locking
+## Double Checked Locking
 
 Reduce the overhead of acquiring a lock by first testing the locking criterion (the "lock hint") without actually acquiring the lock. Only if the locking criterion check indicates that locking is required does the actual locking logic proceed.
 
@@ -199,7 +199,7 @@ Use the Double Checked Locking pattern when
 -	there is a concurrent access in object creation, e.g. singleton, where you want to create single instance of the same class and checking if it's null or not maybe not be enough when there are two or more threads that checks if instance is null or not.
 -	there is a concurrent access on a method where method's behaviour changes according to the some constraints and these constraint change within this method.
 
-##Double Dispatch
+## Double Dispatch
 
 Double Dispatch pattern is a way to create maintainable dynamic behavior based on receiver and parameter types.
 
@@ -209,7 +209,7 @@ Use the Double Dispatch pattern when
 
 -	the dynamic behavior is not defined only based on receiving object's type but also on the receiving method's parameter type.
 
-##Event Aggregator
+## Event Aggregator
 
 A system with lots of objects can lead to complexities when a client wants to subscribe to events. The client has to find and register for each object individually, if each object has multiple events then each event requires a separate subscription. An Event Aggregator acts as a single source of events for many objects. It registers for all the events of the many objects allowing clients to register with just the aggregator.
 
@@ -219,7 +219,7 @@ Use the Event Aggregator pattern when
 
 -	Event Aggregator is a good choice when you have lots of objects that are potential event sources. Rather than have the observer deal with registering with them all, you can centralize the registration logic to the Event Aggregator. As well as simplifying registration, a Event Aggregator also simplifies the memory management issues in using observers.
 
-##Execute Around
+## Execute Around
 
 Execute Around idiom frees the user from certain actions that should always be executed before and after the business method. A good example of this is resource allocation and deallocation leaving the user to specify only what to do with the resource.
 
@@ -241,7 +241,7 @@ Use the Facade pattern when
 -	there are many dependencies between clients and the implementation classes of an abstraction. Introduce a facade to decouple the subsystem from clients and other subsystems, thereby promoting subsystem independence and portability.
 -	you want to layer your subsystems. Use a facade to define an entry point to each subsystem level. If subsystems are dependent, the you can simplify the dependencies between them by making them communicate with each other solely through their facades
 
-##Factory Kit
+## Factory Kit
 
 Define a factory of immutable content with separated builder and factory interfaces.
 
@@ -254,7 +254,7 @@ Use the Factory Kit pattern when
 -	you explicitly want to define types of objects, that factory can build
 -	you want a separated builder and creator interface
 
-##Factory Method
+## Factory Method
 
 Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
 
@@ -266,7 +266,7 @@ Use the Factory Method pattern when
 -	a class wants its subclasses to specify the objects it creates
 -	classes delegate responsibility to one of several helper subclasses, and you want to localize the knowledge of which helper subclass is the delegate
 
-##Feature Toggle
+## Feature Toggle
 
 Used to switch code execution paths based on properties or groupings. Allowing new features to be released, tested and rolled out. Allowing switching back to the older feature quickly if needed. It should be noted that this pattern, can easily introduce code complexity. There is also cause for concern that the old feature that the toggle is eventually going to phase out is never removed, causing redundant code smells and increased maintainability.
 
@@ -278,7 +278,7 @@ Use the Feature Toogle pattern when
 -	Rolling out a new feature incrementally.
 -	Switching between development and production environments.
 
-##Fluent Interface
+## Fluent Interface
 
 A fluent interface provides an easy-readable, flowing interface, that often mimics a domain specific language. Using this pattern results in code that can be read nearly as human language.
 
@@ -295,7 +295,7 @@ Use the Fluent Interface pattern when
 -	you provide an API that would benefit from a DSL-like usage
 -	you have objects that are difficult to configure or use
 
-##Flux
+## Flux
 
 Flux eschews MVC in favor of a unidirectional data flow. When a user interacts with a view, the view propagates an action through a central dispatcher, to the various stores that hold the application's data and business logic, which updates all of the views that are affected.
 
@@ -305,7 +305,7 @@ Use the Flux pattern when
 
 -	you want to focus on creating explicit and understandable update paths for your application's data, which makes tracing changes during development simpler and makes bugs easier to track down and fix.
 
-##Flyweight
+## Flyweight
 
 Use sharing to support large numbers of fine-grained objects efficiently.
 
@@ -320,7 +320,7 @@ The Flyweight pattern's effectiveness depends heavily on how and where it's used
 -	many groups of objects may be replaced by relatively few shared objects once extrinsic state is removed
 -	the application doesn't depend on object identity. Since flyweight objects may be shared, identity tests will return true for conceptually distinct objects.
 
-##Front Controller
+## Front Controller
 
 Introduce a common handler for all requests for a web site. This way we can encapsulate common functionality such as security, internationalization, routing and logging in a single place.
 
@@ -333,7 +333,7 @@ Use the Front Controller pattern when
 -	you want to implements dynamic request handling i.e. change routing without modifying code
 -	make web server configuration portable, you only need to register the handler web server specific way
 
-##Half-Sync/Half-Async
+## Half-Sync/Half-Async
 
 The Half-Sync/Half-Async pattern decouples synchronous I/O from asynchronous I/O in a system to simplify concurrent programming effort without degrading execution efficiency.
 
@@ -348,7 +348,7 @@ Use Half-Sync/Half-Async pattern when
     -		the higher level tasks in the system can be simplified significantly if I/O is performed synchronously.
 -	one or more tasks in a system must run in a single thread of control, while other tasks may benefit from multi-threading.
 
-##Intercepting Filter
+## Intercepting Filter
 
 Provide pluggable filters to conduct necessary pre-processing and post-processing to requests from a client to a target
 
@@ -361,7 +361,7 @@ Use the Intercepting Filter pattern when
 -	a system should do the authentication/ authorization/ logging or tracking of request and then pass the requests to corresponding handlers
 -	you want a modular approach to configuring pre-processing and post-processing schemes
 
-##Interpreter
+## Interpreter
 
 Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
 
@@ -373,7 +373,7 @@ Use the Interpreter pattern when there is a language to interpret, and you can r
 -	the grammar is simple. For complex grammars, the class hierarchy for the grammar becomes large and unmanageable. Tools such as parser generators are a better alternative in such cases. They can interpret expressions without building abstract syntax trees, which can save space and possibly time
 -	efficiency is not a critical concern. The most efficient interpreters are usually not implemented by interpreting parse trees directly but by first translating them into another form. For example, regular expressions are often transformed into state machines. But even then, the translator can be implemented by the Interpreter pattern, so the pattern is still applicable
 
-##Iterator
+## Iterator
 
 Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
 
@@ -386,7 +386,7 @@ Use the Iterator pattern
 -	to support multiple traversals of aggregate objects
 -	to provide a uniform interface for traversing different aggregate structures
 
-##Layers
+## Layers
 
 Layers is an architectural style where software responsibilities are divided among the different layers of the application.
 
@@ -399,7 +399,7 @@ Use the Layers architecture when
 -	you want to prevent a change from propagating throughout the application
 -	you want to make your application more maintainable and testable
 
-##Lazy Loading
+## Lazy Loading
 
 Lazy loading is a design pattern commonly used to defer initialization of an object until the point at which it is needed. It can contribute to efficiency in the program's operation if properly and appropriately used.
 
@@ -410,7 +410,7 @@ Use the Lazy Loading idiom when
 
 -	eager loading is expensive or the object to be loaded might not be needed at all
 
-##Mediator
+## Mediator
 
 Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently.
 
@@ -423,7 +423,7 @@ Use the Mediator pattern when
 -	reusing an object is difficult because it refers to and communicates with many other objects
 -	a behavior that's distributed between several classes should be customizable without a lot of subclassing
 
-##Memento
+## Memento
 
 Without violating encapsulation, capture and externalize an object's internal state so that the object can be restored to this state later.
 
@@ -435,7 +435,7 @@ Use the Memento pattern when
 -	a snapshot of an object's state must be saved so that it can be restored to that state later, and
 -	a direct interface to obtaining the state would expose implementation details and break the object's encapsulation
 
-##Message Channel
+## Message Channel
 
 When two applications communicate using a messaging system they do it by using logical addresses of the system, so called Message Channels.
 
@@ -446,7 +446,7 @@ Use the Message Channel pattern when
 
 -	two or more applications need to communicate using a messaging system
 
-##Model-View-Controller
+## Model-View-Controller
 
 Separate the user interface into three interconnected components: the model, the view and the controller. Let the model manage the data, the view display the data and the controller mediate updating the data and redrawing the display.
 
@@ -457,7 +457,7 @@ Use the Model-View-Controller pattern when
 
 -	you want to clearly separate the domain data from its user interface representation
 
-##Model-View-Presenter
+## Model-View-Presenter
 
 Apply a "Separation of Concerns" principle in a way that allows developers to build and test user interfaces.
 
@@ -469,7 +469,7 @@ Use the Model-View-Presenter in any of the following situations
 -	when you want to improve the "Separation of Concerns" principle in presentation logic
 -	when a user interface development and testing is necessary.
 
-##Monad
+## Monad
 
 Monad pattern based on monad from linear algebra represents the way of chaining operations together step by step. Binding functions can be described as passing one's output to another's input basing on the 'same type' contract. Formally, monad consists of a type constructor M and two operations: bind - that takes monadic object and a function from plain object to monadic value and returns monadic value return - that takes plain type object and returns this object wrapped in a monadic value.
 
@@ -481,7 +481,7 @@ Use the Monad in any of the following situations
 -	when you want to chain operations easily
 -	when you want to apply each function regardless of the result of any of them
 
-##MonoState
+## MonoState
 
 Enforces a behaviour like sharing the same state amongst all instances.
 
@@ -500,7 +500,7 @@ Typical Use Case
 -   managing a connection to a database
 -   file manager
 
-##Multiton
+## Multiton
 
 Ensure a class only has limited number of instances, and provide a global point of access to them.
 
@@ -511,7 +511,7 @@ Use the Multiton pattern when
 
 -   there must be specific number of instances of a class, and they must be accessible to clients from a well-known access point
 
-##Mute Idiom
+## Mute Idiom
 
 Provide a template to supress any exceptions that either are declared but cannot occur or should only be logged; while executing some business logic. The template removes the need to write repeated try-catch blocks.
 
@@ -523,7 +523,7 @@ Use this idiom when
 -   an API declares some exception but can never throw that exception. Eg. ByteArrayOutputStream bulk write method.
 -   you need to suppress some exception just by logging it, such as closing a resource.
 
-##Naked Objects
+## Naked Objects
 
 The Naked Objects architectural pattern is well suited for rapid prototyping. Using the pattern, you only need to write the domain objects, everything else is autogenerated by the framework.
 
@@ -536,7 +536,7 @@ Use the Naked Objects pattern when
 -   an autogenerated user interface is good enough
 -   you want to automatically publish the domain as REST services
 
-##Null Object
+## Null Object
 
 In most object-oriented languages, such as Java or C#, references may be null. These references need to be checked to ensure they are not null before invoking any methods, because methods typically cannot be invoked on null references. Instead of using a null reference to convey absence of an object (for instance, a non-existent customer), one uses an object which implements the expected interface, but whose method body is empty. The advantage of this approach over a working default implementation is that a Null Object is very predictable and has no side effects: it does nothing.
 
@@ -547,7 +547,7 @@ Use the Null Object pattern when
 
 -   you want to avoid explicit null checks and keep the algorithm elegant and easy to read.
 
-##Object Pool
+## Object Pool
 
 When objects are expensive to create and they are needed only for short periods of time it is advantageous to utilize the Object Pool pattern. The Object Pool provides a cache for instantiated objects tracking which ones are in use and which are available.
 
@@ -559,7 +559,7 @@ Use the Object Pool pattern when
 -   the objects are expensive to create (allocation cost)
 -   you need a large number of short-lived objects (memory fragmentation)
 
-##Observer
+## Observer
 
 Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 
@@ -572,7 +572,7 @@ Use the Observer pattern in any of the following situations
 -   when a change to one object requires changing others, and you don't know how many objects need to be changed
 -   when an object should be able to notify other objects without making assumptions about who these objects are. In other words, you don't want these objects tightly coupled
 
-##Poison Pill
+## Poison Pill
 
 Poison Pill is known predefined data item that allows to provide graceful shutdown for separate distributed consumption process.
 
@@ -583,7 +583,7 @@ Use the Poison Pill idiom when
 
 -   need to send signal from one thread/process to another to terminate
 
-##Private Class Data
+## Private Class Data
 
 Private Class Data design pattern seeks to reduce exposure of attributes by limiting their visibility. It reduces the number of class attributes by encapsulating them in single Data object.
 
@@ -594,7 +594,7 @@ Use the Private Class Data pattern when
 
 -   you want to prevent write access to class data members
 
-##Producer Consumer
+## Producer Consumer
 
 Producer Consumer Design pattern is a classic concurrency pattern which reduces coupling between Producer and Consumer by separating Identification of work with Execution of Work.
 
@@ -606,7 +606,7 @@ Use the Producer Consumer idiom when
 -   decouple system by separate work in two process produce and consume.
 -   addresses the issue of different timing require to produce work or consuming work
 
-##Property
+## Property
 
 Create hierarchy of objects and new objects using already existing objects as parents.
 
@@ -617,7 +617,7 @@ Use the Property pattern when
 
 -   when you like to have objects with dynamic set of fields and prototype inheritance
 
-##Prototype
+## Prototype
 
 Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.
 
@@ -629,7 +629,7 @@ Use the Prototype pattern when a system should be independent of how its product
 -   to avoid building a class hierarchy of factories that parallels the class hierarchy of products; or
 -   when instances of a class can have one of only a few different combinations of state. It may be more convenient to install a corresponding number of prototypes and clone them rather than instantiating the class manually, each time with the appropriate state
 
-##Proxy
+## Proxy
 
 Provide a surrogate or placeholder for another object to control access to it.
 
@@ -642,7 +642,7 @@ Proxy is applicable whenever there is a need for a more versatile or sophisticat
 -   a protection proxy controls access to the original object. Protection proxies are useful when objects should have different access rights.
 
 
-##Publish Subscribe
+## Publish Subscribe
 
 Broadcast messages from sender to all the interested receivers.
 
@@ -654,7 +654,7 @@ Use the Publish Subscribe Channel pattern when
 -   two or more applications need to communicate using a messaging system for broadcasts.
 
 
-##Reactor
+## Reactor
 
 The Reactor design pattern handles service requests that are delivered concurrently to an application by one or more clients. The application can register specific handlers for processing which are called by reactor on specific events. Dispatching of event handlers is performed by an initiation dispatcher, which manages the registered event handlers. Demultiplexing of service requests is performed by a synchronous event demultiplexer.
 
@@ -667,7 +667,7 @@ Use Reactor pattern when
 -   a server application needs to be available for receiving requests from new clients even when handling older client requests.
 -   a server must maximize throughput, minimize latency and use CPU efficiently without blocking.
 
-##Reader Writer Lock
+## Reader Writer Lock
 
 Suppose we have a shared memory area with the basic constraints detailed above. It is possible to protect the shared data behind a mutual exclusion mutex, in which case no two threads can access the data at the same time. However, this solution is suboptimal, because it is possible that a reader R1 might have the lock, and then another reader R2 requests access. It would be foolish for R2 to wait until R1 was done before starting its own read operation; instead, R2 should start right away. This is the motivation for the Reader Writer Lock pattern.
 
@@ -676,7 +676,7 @@ Suppose we have a shared memory area with the basic constraints detailed above. 
 
 Application need to increase the performance of resource synchronize for multiple thread, in particularly there are mixed read/write operations.
 
-##Repository
+## Repository
 
 Repository layer is added between the domain and data mapping layers to isolate domain objects from details of the database access code and to minimize scattering and duplication of query code. The Repository pattern is especially useful in systems where number of domain classes is large or heavy querying is utilized.
 
@@ -690,7 +690,7 @@ Use the Repository pattern when
 -   you want to keep the database querying code in single place
 -   you have multiple data sources
 
-##Resource Acquisition Is Initialization
+## Resource Acquisition Is Initialization
 
 Resource Acquisition Is Initialization pattern can be used to implement exception safe resource management.
 
@@ -701,7 +701,7 @@ Use the Resource Acquisition Is Initialization pattern when
 
 -   you have resources that must be closed in every condition
 
-##Servant
+## Servant
 
 Servant is used for providing some behavior to a group of classes. Instead of defining that behavior in each class - or when we cannot factor out this behavior in the common parent class - it is defined once in the Servant.
 
@@ -713,7 +713,7 @@ Use the Servant pattern when
 -   when we want some objects to perform a common action and don't want to define this action as a method in every class.
 
 
-##Service Layer
+## Service Layer
 
 Service Layer is an abstraction over domain logic. Typically applications require multiple kinds of interfaces to the data they store and logic they implement: data loaders, user interfaces, integration gateways, and others. Despite their different purposes, these interfaces often need common interactions with the application to access and manipulate its data and invoke its business logic. The Service Layer fulfills this role.
 
@@ -725,7 +725,7 @@ Use the Service Layer pattern when
 -   you want to encapsulate domain logic under API
 -   you need to implement multiple interfaces with common logic and data
 
-##Service Locator
+## Service Locator
 
 Encapsulate the processes involved in obtaining a service with a strong abstraction layer.
 
@@ -740,7 +740,7 @@ Typical Use Case
 -   lookups of services are done quite frequently
 -   large number of services are being used
 
-##Singleton
+## Singleton
 
 Ensure a class only has one instance, and provide a global point of access to it.
 
@@ -758,7 +758,7 @@ Typical Use Case
 -   managing a connection to a database
 -   file manager
 
-##Specification
+## Specification
 
 Specification pattern separates the statement of how to match a candidate, from the candidate object that it is matched against. As well as its usefulness in selection, it is also valuable for validation and for building to order
 
@@ -770,7 +770,7 @@ Use the Specification pattern when
 -   you need to select a subset of objects based on some criteria, and to refresh the selection at various times
 -   you need to check that only suitable objects are used for a certain role (validation)
 
-##State
+## State
 
 Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
 
@@ -782,7 +782,7 @@ Use the State pattern in either of the following cases
 -   an object's behavior depends on its state, and it must change its behavior at run-time depending on that state
 -   operations have large, multipart conditional statements that depend on the object's state. This state is usually represented by one or more enumerated constants. Often, several operations will contain this same conditional structure. The State pattern puts each branch of the conditional in a separate class. This lets you treat the object's state as an object in its own right that can vary independently from other objects.
 
-##Step Builder
+## Step Builder
 
 An extension of the Builder pattern that fully guides the user through the creation of the object with no chances of confusion. The user experience will be much more improved by the fact that he will only see the next step methods available, NO build method until is the right time to build the object.
 
@@ -791,7 +791,7 @@ An extension of the Builder pattern that fully guides the user through the creat
 
 Use the Step Builder pattern when the algorithm for creating a complex object should be independent of the parts that make up the object and how they're assembled the construction process must allow different representations for the object that's constructed when in the process of constructing the order is important.
 
-##Strategy
+## Strategy
 
 Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 
@@ -805,7 +805,7 @@ Use the Strategy pattern when
 -   an algorithm uses data that clients shouldn't know about. Use the Strategy pattern to avoid exposing complex, algorithm-specific data structures
 -   a class defines many behaviors, and these appear as multiple conditional statements in its operations. Instead of many conditionals, move related conditional branches into their own Strategy class
 
-##Template method
+## Template method
 
 Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
 
@@ -818,7 +818,7 @@ The Template Method pattern should be used
 -   when common behavior among subclasses should be factored and localized in a common class to avoid code duplication. This is good example of "refactoring to generalize" as described by Opdyke and Johnson. You first identify the differences in the existing code and then separate the differences into new operations. Finally, you replace the differing code with a template method that calls one of these new operations
 -   to control subclasses extensions. You can define a template method that calls "hook" operations at specific points, thereby permitting extensions only at those points
 
-##Thread Pool
+## Thread Pool
 
 It is often the case that tasks to be executed are short-lived and the number of tasks is large. Creating a new thread for each task would make the system spend more time creating and destroying the threads than executing the actual tasks. Thread Pool solves this problem by reusing existing threads and eliminating the latency of creating new threads.
 
@@ -829,7 +829,7 @@ Use the Thread Pool pattern when
 
 -   you have a large number of short-lived tasks to be executed in parallel
 
-##Tolerant Reader
+## Tolerant Reader
 
 Tolerant Reader is an integration pattern that helps creating robust communication systems. The idea is to be as tolerant as possible when reading data from another service. This way, when the communication schema changes, the readers must not break.
 
@@ -840,7 +840,7 @@ Use the Tolerant Reader pattern when
 
 -   the communication schema can evolve and change and yet the receiving side should not break
 
-##Twin
+## Twin
 
 Twin pattern is a design pattern which provides a standard solution to simulate multiple inheritance in java
 
@@ -852,7 +852,7 @@ Use the Twin idiom when
 -   to simulate multiple inheritance in a language that does not support this feature.
 -   to avoid certain problems of multiple inheritance such as name clashes.
 
-##Value Object
+## Value Object
 
 Provide objects which follow value semantics rather than reference semantics. This means value objects' equality are not based on identity. Two value objects are equal when they have the same value, not necessarily being the same object.
 
@@ -863,7 +863,7 @@ Use the Value Object when
 
 -   you need to measure the objects' equality based on the objects' value
 
-##Visitor
+## Visitor
 
 Represent an operation to be performed on the elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates.
 

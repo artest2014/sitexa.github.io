@@ -17,7 +17,7 @@ weixin-robot 是 webot 和 wechat-mp 的 高级包装。webot 负责定义回复
 -   支持等待后续操作模式，如可以提示用户“需要我执行xxx操作吗？”
 -   可直接从 yaml 或 json 文件中载入对话规则
 
-##快速入门 | FAQ | 示例
+## 快速入门 | FAQ | 示例
 
     var express = require('express');
     var webot = require('weixin-robot');
@@ -85,23 +85,23 @@ weixin-robot 是 webot 和 wechat-mp 的 高级包装。webot 负责定义回复
 
 如果一切顺利，你也搭建好了自己的机器人，欢迎到此项目的 Wiki 页面添加你的帐号。
 
-##命令行工具
+## 命令行工具
 
 提供可执行文件 webot 用于发送测试消息。 使用 npm 安装 webot-cli：
 
     npm install webot-cli -g
     
-##微信公共账号自定义菜单
+## 微信公共账号自定义菜单
 
 webot-cli 提供处理微信自定义菜单的功能，安装好之后执行：
 
     webot help menu
 
-##微信自动回复API流程图
+## 微信自动回复API流程图
 
 ![image](/images/wechat-api-flow.png)
 
-##规则定义
+## 规则定义
 
 > 具体的规则定义部分，请参考 webot 的文档。
 
@@ -111,11 +111,11 @@ webot-cli 提供处理微信自定义菜单的功能，安装好之后执行：
 -   webot.waitRule()
 -   webot.loads()
 
-##info 对象
+## info 对象
 
 webot rule 的 handler 接收到的 info 对象，包含请求消息内容和 session 支持。
 
-##请求消息属性
+## 请求消息属性
 
 wexin-robot 的 info 把微信的请求内容包装为了更符合 js 命名规则的值，并根据 MsgType 的不同， 将额外参数存入了 info.param 对象。这样做能保证 info 对象的标准化，方便你在 不同平台使用相同的机器人。
 
@@ -145,7 +145,7 @@ wexin-robot 的 info 把微信的请求内容包装为了更符合 js 命名规�
       }
     }
     
-##info.reply
+## info.reply
 
 大部分时候你并不需要直接给 info.reply 赋值。
 
@@ -157,11 +157,11 @@ info.reply 支持的数据类型：
 -   {Object} 单条 图文消息/音乐消息
 -   {Array} 多条图文消息
 
-##回复文本消息
+## 回复文本消息
 
     info.reply = '收到你的消息了，谢谢'
 
-##回复图文消息
+## 回复图文消息
 
     title        消息标题
     url          消息网址
@@ -188,7 +188,7 @@ info.reply 支持的数据类型：
       description: '对消息的描述出现在这里',
     }]
     
-##回复音乐消息
+## 回复音乐消息
 
     title             标题
     description       描述
@@ -206,7 +206,7 @@ info.reply 支持的数据类型：
     
 Have fun with wechat, and enjoy being a robot!
 
-##info.noReply
+## info.noReply
 
 如果对不想回复的消息，可设置 info.noReply = true
 

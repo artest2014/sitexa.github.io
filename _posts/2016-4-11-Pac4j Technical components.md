@@ -10,7 +10,7 @@ It is currently available for most frameworks / tools and supports most authenti
 
 ![image](/images/Pac4j.png)
 
-##pac4j-core:
+## pac4j-core:
 
 This is the core module of the project with the core classes/interfaces:
 
@@ -28,7 +28,7 @@ This is the core module of the project with the core classes/interfaces:
 -   *ClientFinder* and its default implementation: DefaultClientFinder are meant to retrieve the current client(s) in the pac4j implementations
 -   *MatchingChecker* and its default implementation: DefaultMatchingChecker are meant to check if the current request matches (regarding Matcher) and must be enforced to security checks (it is used in some pac4j implementations).
 
-##pac4j-oauth:
+## pac4j-oauth:
 
 This module is dedicated to OAuth client support:
 

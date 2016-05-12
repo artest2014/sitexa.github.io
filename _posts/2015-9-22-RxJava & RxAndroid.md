@@ -4,7 +4,7 @@ title: Resources about ReactiveX, RxJava & RxAndroid & Retrofit
 category: 'java'
 ---
 
-##RxJava
+## RxJava
 
 1,<a href="https://github.com/ReactiveX/RxJava/wiki">ReactiveX RxJava Wiki</a>
 
@@ -13,7 +13,7 @@ category: 'java'
 3,<a href="https://www.bignerdranch.com/blog/what-is-functional-reactive-programming/">What is Functional Reactive Programming?</a>
 
 
-##RxJava-android
+## RxJava-android
  
 1,<a href="https://github.com/ReactiveX/RxJava/wiki/The-RxJava-Android-Module">Wiki: The RxJava Android Module </a>
 
@@ -29,7 +29,7 @@ category: 'java'
 
 7,<a href="http://futurice.com/blog/top-7-tips-for-rxjava-on-android">Top 7 Tips for RxJava on Android</a>
 
-##RxJava & Android @ GitHub
+## RxJava & Android @ GitHub
 
 1,<a href="https://github.com/kaushikgopal/RxJava-Android-Samples">Learning RxJava for Android by example</a>
 
@@ -41,7 +41,7 @@ category: 'java'
 
 5,<a href="http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/Lambda-QuickStart/index.html#">Java SE 8: Lambda Quick Start</a>
 
-##Using RxJava with Retrolambda or Groovy on Android
+## Using RxJava with Retrolambda or Groovy on Android
 
 https://gist.github.com/vizZ/9756d2e2450a7ef9f744
 

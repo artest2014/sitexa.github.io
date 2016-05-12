@@ -16,7 +16,7 @@ Actor has one of the best IM apps for Android, iOS, and Web. Thay are designed t
 
 The Actor Platform is good for improving enterprise communications, building a message-oriented startup, or building a country-wide national messenger.
 
-##Architecture
+## Architecture
 
 ![image](/images/ActorArchitecture.png)
 

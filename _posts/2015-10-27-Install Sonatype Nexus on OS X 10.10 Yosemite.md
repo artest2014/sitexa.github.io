@@ -4,15 +4,15 @@ title: Installing Sonatype Nexus on OS X 10.10 Yosemite
 category: 'osx'
 ---
 
-##1.下载
+## 1.下载
 
 我们可以在nexus的官网上找到它的相关介绍，下载地址是http://www.sonatype.org/nexus/go，在这里可以找到最新的版本，如果需要以前的版本，在这里也可以找到下载地址。Nexus提供了两种安装方式，一种是内嵌Jetty的bundle，只要你有JRE就能直接运行。第二种方式是WAR，你只须简单的将其发布到web容器中即可使用。为了方便就直接选用bundle版本。我下载的是：nexus-2.11.4-01-bundle.tar.gz。
 
-##2.安装
+## 2.安装
 
 在指定的目录解压下载的文件。解压后会看到两个文件夹，分别是nexus-2.11.4-01和sonatype-work，前者包含了nexus的运行环境和应用程序，后者包含了你自己的配置和存储构件的地方。nexus-2.11.4-01/conf/nexus.properties中可以修改端口信息以及工作区的路径。
 
-###2.1 command and directory:
+### 2.1 command and directory:
 
      sudo mkdir -p /usr/local
 
@@ -24,11 +24,11 @@ category: 'osx'
 
      sudo chown -R /Library/Tomcat
 
-##3.启动nexus
+## 3.启动nexus
 
 进入nexus-2.11.4-01/bin/jsw/目录，然后根据OS的版本进入相应的目录，在linux下，运行./nexus start即启动了服务，直接运行./nexus会看到提示信息，运行./nexus console 可以以控制台方式启动nexus，方便我们观察启动时的相关工作。neuxs默认监听端口是8081，此时在浏览器中运行访问http://127.0.0.1:8081/nexus或者http://localhost:8081/nexus或者http://0.0.0.0:8081/nexus应该可以看到nexus的界面。
 
-##4配置nexus
+## 4配置nexus
 
 新搭建的neuxs环境只是一个空的仓库，需要手动和远程中心库进行同步，nexus默认是关闭远程索引下载，最重要的一件事情就是开启远程索引下载。登陆nexus系统，默认用户名密码为admin/admin123。 点击左边Views/Repositories菜单下面的Repositories，找到右边仓库列表中的三个仓库Apache Snapshots，Codehaus Snapshots和Central，然后再没有仓库的Configuration下把Download Remote Indexes修改为true。然后在这三个仓库上分别右键，选择Repari Index，这样Nexus就会去下载远程的索引文件。
 

@@ -6,7 +6,7 @@ category: 'technology'
 
 Spark - A micro framework for creating web applications in Java 8 with minimal effort
 
-##start
+## start
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-core</artifactId>
@@ -15,17 +15,17 @@ Spark - A micro framework for creating web applications in Java 8 with minimal e
     
     get("/hello",(req,res)->{"Hello,world"});
 
-##stop server: 
+## stop server:
     
     stop();
 
-##Routes
+## Routes
 -   1,verb(get,post,put,delete,head,trace,connect,options);
    parameters, splat parameters
 -   2, path (/hello,/users/:name);
 -   3, callback (request,response->{}
 
-##Request
+## Request
     request.attributes();             // the attributes list
     request.attribute("foo");         // value of foo attribute
     request.attribute("A", "V");      // sets value of attribute A to V
@@ -59,7 +59,7 @@ Spark - A micro framework for creating web applications in Java 8 with minimal e
     request.url();                    // the url. e.g. "http://example.com/foo"
     request.userAgent();              // user agent
 
-##Response
+## Response
     response.body("hello");
     response.header("foo","bar");
     response.raw();
@@ -67,13 +67,13 @@ Spark - A micro framework for creating web applications in Java 8 with minimal e
     response.status(401);
     response.type("text/xml");
 
-##QueryMaps;
+## QueryMaps;
     request.queryMap().get("user", "name").value();
     request.queryMap().get("user").get("name").value();
     request.queryMap("user").get("age").integerValue();
     request.queryMap("user").toMap();
 
-##Cookie
+## Cookie
     request.cookies();                              // get map of all request cookies
     request.cookie("foo");                          // access request cookie by name
     response.cookie("foo", "bar");                  // set cookie with a value
@@ -81,7 +81,7 @@ Spark - A micro framework for creating web applications in Java 8 with minimal e
     response.cookie("foo", "bar", 3600, true);      // secure cookie
     response.removeCookie("foo");                   // remove cookie
 
-##Session
+## Session
     request.session(true)                            // create and return session
     request.session().attribute("user")              // Get session attribute 'user'
     request.session().attribute("user", "foo")       // Set session attribute 'user'
@@ -91,7 +91,7 @@ Spark - A micro framework for creating web applications in Java 8 with minimal e
     request.session().isNew()                        // Check if session is new
     request.session().raw()                          // Return servlet object
 
-##Filter
+## Filter
     before((request, response) -> {
         boolean authenticated;
         // ... check if authenticated
@@ -103,10 +103,10 @@ Spark - A micro framework for creating web applications in Java 8 with minimal e
         response.header("foo","bar");
     });
 
-##Redirect
+## Redirect
     response.redirect("/bar",301);
 
-##Exception Mapping
+## Exception Mapping
     get("/throwexception", (request, response) -> {
         throw new NotFoundException();
     });
@@ -116,93 +116,93 @@ Spark - A micro framework for creating web applications in Java 8 with minimal e
         response.body("Resource not found");
     });
 
-##Static Files
+## Static Files
     staticFileLocation("/public"); // Static files
     externalStaticFileLocation("/var/www/public"); // Static files
 
-##ResponseTransformer
+## ResponseTransformer
     get("/hello", (request, response) -> new MyMessage("Hello World"), gson::toJson);
 
-##Views and Templates
+## Views and Templates
 
-####Velocity
+####  Velocity
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-template-velocity</artifactId>
         <version>2.3</version>
     </dependency>
 
-####Freemarker
+####  Freemarker
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-template-freemarker</artifactId>
         <version>2.3</version>
     </dependency>
 
-####Mustache
+####  Mustache
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-template-mustache</artifactId>
         <version>2.3</version>
     </dependency>
 
-####Handlebars
+####  Handlebars
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-template-handlebars</artifactId>
         <version>2.3</version>
     </dependency>
 
-####Jade
+####  Jade
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-template-jade</artifactId>
         <version>2.3</version>
     </dependency>
 
-###Thymeleaf
+### Thymeleaf
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-template-thymeleaf</artifactId>
         <version>2.3</version>
     </dependency>
 
-####Jetbrick
+####  Jetbrick
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-template-jetbrick</artifactId>
         <version>2.3</version>
     </dependency>
 
-###Pebble
+### Pebble
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-template-pebble</artifactId>
         <version>2.3</version>
     </dependency>
 
-####Water
+####  Water
     <dependency>
         <groupId>com.sparkjava</groupId>
         <artifactId>spark-template-water</artifactId>
         <version>2.3</version>
     </dependency>
 
-##Embedded Server
+## Embedded Server
 
-####port
+####  port
 
     port(9090)
 
-####secure 
+####  secure
 
     secure(keystoreFile, keystorePassword, truststoreFile, truststorePassword);
 
-####threadpool
+####  threadpool
 
     threadPool(maxThreads, minThreads, timeOutMillis);
 
-##WebSocket
+## WebSocket
     
     webSocket("/echo", EchoWebSocket.class);
     init(); // Needed if you don't define any HTTP routes after your WebSocket routes
@@ -230,7 +230,7 @@ Spark - A micro framework for creating web applications in Java 8 with minimal e
         }
     }
 
-##Other Web Server
+## Other Web Server
     
     <filter>
         <filter-name>SparkFilter</filter-name>
@@ -246,7 +246,7 @@ Spark - A micro framework for creating web applications in Java 8 with minimal e
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-##GZIP
+## GZIP
 
     get("/some-path", (request, response) -> {
         // code for your get

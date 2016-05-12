@@ -4,7 +4,7 @@ title: Reactive Pattern, RxJava & RxAndroid & Retrofit
 category: 'java'
 ---
 
-##基础
+## 基础
 
 RxJava最核心的两个东西是Observables（观察者，事件源）和Subscribers（订阅者）。Observables发出一系列事件，Subscribers处理这些事件。这里的事件可以是任何你感兴趣的东西（触摸事件，web接口调用返回的数据。。。）
 
@@ -12,7 +12,7 @@ RxJava最核心的两个东西是Observables（观察者，事件源）和Subscr
 
 Rxjava的看起来很象设计模式中的观察者模式，但是有一点明显不同，那就是如果一个Observerble没有任何的的Subscriber，那么这个Observable是不会发出任何事件的。
 
-###Hello world
+### Hello world
 
 创建一个Observable对象很简单，直接调用Observable.create即可.
 
@@ -75,9 +75,9 @@ subscribe方法有一个重载版本，接受三个Action1类型的参数，分�
     Observable.just("Hello, world!")  
         .subscribe(s -> System.out.println(s));  
     
-###操作符(Operators)
+### 操作符(Operators)
 
-####map
+####  map
     
     Observable.just("Hello, world!")  
         .map(s -> s + " -Dan")  
@@ -87,7 +87,7 @@ subscribe方法有一个重载版本，接受三个Action1类型的参数，分�
         .map(s -> s.hashCode())  
         .subscribe(i -> System.out.println(Integer.toString(i)));  
                 
-####flatMap
+####  flatMap
 
 Observable.flatMap()接收一个Observable的输出作为输入，同时输出另外一个Observable。
     
@@ -102,7 +102,7 @@ Observable.flatMap()接收一个Observable的输出作为输入，同时输出�
         .flatMap(url -> getTitle(url))  
         .subscribe(title -> System.out.println(title));  
 
-####filter
+####  filter
 
 从返回的title列表中过滤掉null值.
     
@@ -111,7 +111,7 @@ Observable.flatMap()接收一个Observable的输出作为输入，同时输出�
         .flatMap(url -> getTitle(url))  
         .filter(title -> title != null)  
         .subscribe(title -> System.out.println(title));  
-####take
+####  take
 
 我们只想要最多5个结果：
 
@@ -122,7 +122,7 @@ Observable.flatMap()接收一个Observable的输出作为输入，同时输出�
         .take(5)  
         .subscribe(title -> System.out.println(title));
         
-####doOnNext
+####  doOnNext
 
 把每个标题保存到磁盘：
 
@@ -134,7 +134,7 @@ Observable.flatMap()接收一个Observable的输出作为输入，同时输出�
         .doOnNext(title -> saveTitle(title))  
         .subscribe(title -> System.out.println(title));  
 
-###异常处理
+### 异常处理
     Observable.just("Hello, world!")
         .map(s -> potentialException(s))
         .map(s -> anotherPotentialException(s))
@@ -149,7 +149,7 @@ Observable.flatMap()接收一个Observable的输出作为输入，同时输出�
             public void onError(Throwable e) { System.out.println("Ouch!"); }
         });
     
-###调度器
+### 调度器
 
 使用RxJava，你可以使用subscribeOn()指定观察者代码运行的线程，使用observerOn()指定订阅者运行的线程
     
@@ -158,18 +158,18 @@ Observable.flatMap()接收一个Observable的输出作为输入，同时输出�
         .observeOn(AndroidSchedulers.mainThread())
         .subscribe(bitmap -> myImageView.setImageBitmap(bitmap));
     
-###订阅（Subscriptions）
+### 订阅（Subscriptions）
     
     Subscription subscription = Observable.just("Hello, World!")
         .subscribe(s -> System.out.println(s));
     subscription.unsubscribe();
     System.out.println("Unsubscribed=" + subscription.isUnsubscribed());
     
-###RxAndroid
+### RxAndroid
 
 RxAndroid是RxJava的一个针对Android平台的扩展。它包含了一些能够简化Android开发的工具。
 
-###Retrofit
+### Retrofit
     
     @GET("/user/{id}/photo")
     void getUserPhoto(@Path("id") int id, Callback<Photo> cb);
