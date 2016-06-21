@@ -247,8 +247,8 @@ Activity()
 |final SearchEvent	getSearchEvent()| During the onSearchRequested() callbacks, this function will return the SearchEvent that triggered the callback, if it exists.|
 |Object	getSystemService(String name)|Return the handle to a system-level service by name.|
 |int	getTaskId()|Return the identifier of the task this activity is in.|
-|final CharSequence	|getTitle()|
-|final int	|getTitleColor()|
+|final CharSequence	getTitle()|
+|final int	getTitleColor()|
 |VoiceInteractor	getVoiceInteractor()|Retrieve the active VoiceInteractor that the user is going through to interact with this activity.|
 |final int	getVolumeControlStream()|Gets the suggested audio stream whose volume should be changed by the hardware volume controls.|
 |Window	getWindow()|Retrieve the current Window for the activity.|
