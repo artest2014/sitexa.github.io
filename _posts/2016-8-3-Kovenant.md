@@ -292,5 +292,51 @@ promise success {
 val p = Promise.of(42).withContext(Kovenant.context)
 ```
 
+#   Example
+
+```
+class SunService {
+fun getSunInfo(lat: Double, lon: Double): Promise<SunInfo, Exception> = task {
+    val url = "http://api.sunrise-sunset.org/json?lat=$lat&lng=$lon&formatted=0"
+    val (request, response, result) = url.httpGet().responseString()
+    val jsonStr = String(response.data, Charset.forName("UTF-8"))
+    val json = JsonParser().parse(jsonStr).obj
+    val sunrise = json["results"]["sunrise"].string
+    val sunset = json["results"]["sunset"].string
+    val sunriseTime = DateTime.parse(sunrise)
+    val sunsetTime = DateTime.parse(sunset)
+    val formatter = DateTimeFormat.forPattern("HH:mm:ss").withZone(DateTimeZone.forID("Asia/Chongqing"))
+    SunInfo(formatter.print(sunriseTime), formatter.print(sunsetTime))
+  }
+}
+
+class WeatherService {
+fun getTemperature(lat: Double, lon: Double): Promise<Double, Exception> = task {
+    val url = "http://api.openweathermap.org/data/2.5/weather?lat=$lat&lon=$lon&appid=d06f9fa75ebe72262aa71dc6c1dcd118&units=metric"
+    val (request, response, result) = url.httpGet().responseString()
+    val jsonStr = String(response.data, Charset.forName("UTF-8"))
+    val json = JsonParser().parse(jsonStr).obj
+    json["main"]["temp"].double
+  }
+}
+
+router.get("/api/data").handler { ctx ->
+    val lat = 28.1791667
+    val lng = 113.1136111
+    val sunInfoP = sunService.getSunInfo(lat, lng)
+    val temperatureP = weatherService.getTemperature(lat, lng)
+    val sunWeatherInfoP = sunInfoP.bind { sunInfo ->
+        temperatureP.map { temp -> SunWeatherInfo(sunInfo, temp) }
+    }
+    sunWeatherInfoP.success { info ->
+        val json = jsonMapper.writeValueAsString(info)
+        val response = ctx.response()
+        response.end(json)
+    }
+}
+
+```
+
+
 
 
