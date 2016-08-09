@@ -74,6 +74,7 @@ controlled by three voting computers, with two physical processors per computer 
 -   the Linux Terminal Server Project (LTSP).
 
 ---------------------------------------------------------------
+
 ##  OSX, the most elegant os by Apple;
 
 ![image](/images/Osxboxes.png)
