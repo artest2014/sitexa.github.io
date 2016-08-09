@@ -188,6 +188,6 @@ I am interest in all interest things in the world.
 
 ## Contact me
 
--   sitexa@gmail.com
+-   xnpeng@hotmail.com
 -   Twitter: xnpeng
 -   WeChat: xnpeng
