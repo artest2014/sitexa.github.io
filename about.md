@@ -89,7 +89,9 @@ OS X is the second most widely used desktop OS after Windows.
 ---------------------------------------------------------------
 
 ##  Frameworks and components
+
 ### Laravel
+
 A PHP Framework For Web Artisans.
 
 ### CodeIgniter
