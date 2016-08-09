@@ -75,6 +75,7 @@ controlled by three voting computers, with two physical processors per computer 
 
 ---------------------------------------------------------------
 ##  OSX, the most elegant os by Apple;
+
 ![image](/images/Osxboxes.png)
 
 OS X is the fourth most popular general purpose OS; within the market of desktop, laptop and home computers, and by web usage, 
