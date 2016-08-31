@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vertx vs Wasabi: Character Encoding
+title: Vertx vs Wasabi - Character Encoding
 category: 'technology'
 ---
 
