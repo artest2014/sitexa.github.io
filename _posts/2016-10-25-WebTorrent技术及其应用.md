@@ -82,7 +82,6 @@ WebRTC( Real-time-communication) 是W3C标，用来支持浏览器到浏览器�
 -   TorrentMedia - Desktop WebTorrent client
 -   More coming soon – Send a PR to add your client to the list!
 
-
 #   WebTorrent的应用领域
 
 ##  1,内容加速(CDN)
