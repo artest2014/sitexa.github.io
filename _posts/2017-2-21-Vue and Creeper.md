@@ -83,7 +83,7 @@ Here we are talking about creepiest of the most creepy codes. Programs, behave s
 
 ##  10billionhongbaos
 
-一篇习作，教你如何实现单机支持100万用户，同时模拟了2015年微信红包的1400万QPS的场景，让服务器在压力下，轻松地完成业务。
+实现单机支持100万用户，同时模拟了2015年微信红包的1400万QPS的场景，让服务器在压力下，轻松地完成业务。
 
 技术要点：
 
