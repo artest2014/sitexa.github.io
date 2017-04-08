@@ -4,7 +4,6 @@ title: 深入理解Java 8 Lambda (语言篇 ---- lambda,方法引用，目标类
 category: 'technology'
 ---
 
-##  关于
 
 本文介绍了Java SE 8中新引入的lambda语言特性以及这些特性背后的设计思想。这些特性包括：
 
