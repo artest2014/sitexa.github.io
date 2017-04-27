@@ -32,10 +32,10 @@ http://stackoverflow.com/questions/3659004/json-strings-and-how-to-handle-escape
 ```
 interface SitexaApi {
     @GET("/user/{userId}")
-    fun userPage(@Path("userId") userId: String): Call<Any>
+    fun userPage(@Path("userId") userId: String): Call<ResponseBody>
 
     @GET("/sweet/{id}")
-    fun sweet(@Path("id") id: Int): Call<Any>
+    fun sweet(@Path("id") id: Int): Call<ResponseBody>
 }
 
 class JodaTimeAdapter {

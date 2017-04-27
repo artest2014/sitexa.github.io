@@ -111,7 +111,7 @@ fun getUserPage2(userId: String): List<Sweet> {
 
 与另一文章中的Api接口的返回值类型不同：
 
--   上文的返回类型：Call<ResponseBody>,接口规范不明确，不知道其中对象类型；
--   本方的返回类型：Call<Sweet>,Call<List<Sweet>>，接口规范明确。
+-   上文的返回类型：```Call<ResponseBody>```,接口规范不明确，不知道其中对象类型；
+-   本方的返回类型：```Call<Sweet>,Call<List<Sweet>>```，接口规范明确。
 
 
