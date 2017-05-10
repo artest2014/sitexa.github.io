@@ -210,9 +210,10 @@ call.transform.register<JsonResponse> { value ->
 
 >   原则是，在服务端对象据转换几次json，在客户端就要回转几次json，数据才能复原。与encode/decode类似。
 
-Retrofit: 2.2.0
+version:
 
-OkHttp: 3.6.0
+-   Retrofit: 2.2.0
+-   OkHttp: 3.6.0
 
 
 参考：[https://futurestud.io/tutorials/retrofit-2-how-to-upload-files-to-server](https://futurestud.io/tutorials/retrofit-2-how-to-upload-files-to-server)
