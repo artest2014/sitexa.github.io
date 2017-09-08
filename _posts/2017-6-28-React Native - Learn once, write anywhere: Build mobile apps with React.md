@@ -1,6 +1,6 @@
 ---
 layout: post
-ttitle: React Native - Learn once, write anywhere: Build mobile apps with React
+title: React Native - Learn once, write anywhere: Build mobile apps with React
 category: 'technology'
 ---
 
